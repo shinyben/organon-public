@@ -31,16 +31,18 @@ If meaning is negotiated, then **reality itself is also a negotiated framework**
 - **Physical reality** (as we perceive it) is shaped by our sensory and cognitive limits. A bat’s ultrasonic world, a bee’s UV-vision, or a colorblind person reveals how much we miss.  
 - **Social reality** (money, laws, nations) exists purely because we act *as if* it does. A border is simply a line on a map until there are armies standing on either side of it - armies summoned by the invisible line.
 
-*Current Controversies in Metaphysics* contains an essay to this effect called "Do Ordinary Objects Exist? No" by professor Trenton Merricks:
+*Current Controversies in Metaphysics* contains an essay to this effect called "Do Ordinary Objects Exist? No" by professor Trenton Merricks. 
+
+For an object to exist, it must have _unique_ causal effects—effects not _wholly overdetermined_ by its parts or other entities. If an object’s alleged causal role is entirely duplicated by other things (e.g., a "pair of gloves" causing warmth when its individual gloves already explain the effect), the object is _causally redundant_ and, by Merricks' standards, does not exist. In other words:
 
 1. **Merricks argues that ordinary objects (like chairs or trees) don’t truly exist** - only the tiny particles they’re made of (atoms, molecules) are real, arranged in ways that make us _think_ we see objects.
 2. **He says calling something a "chair" is just a useful label**, not proof it exists as a separate thing, since everything is really just particles obeying physics.
 3. **His conclusion**: **Believing in ordinary objects is unnecessary** for science or daily life - we can explain the world perfectly well without them.
 
-Something as simple as a red ball is neither truly a ball nor even universally red. It is simply a convenient mental object that *most* people can interact with.
+Something as simple as a red ball is, per Merricks, neither truly a ball nor, per things like red-green colorblindness, even universally red. It is simply a convenient mental object that *most* people can interact with.
 
 **Implication:**  
-Reality is not an objective "out there" but a **network of shared interpretations**.  
+Reality is not an objective "out there" but a **network of shared interpretations**. We can only see the **heuristic concepts** we've built on top of reality, not reality unfiltered.
 
 ---
 
