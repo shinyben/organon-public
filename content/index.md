@@ -1,7 +1,7 @@
 ---
 title: Welcome to Organon
 ---
-![[Pasted image 20250326135700.png|400]]
+![[Pasted image 20250405212248.png|500]]
 
 Cover of *Capitalism and Schizophrenia*
 
