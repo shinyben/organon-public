@@ -1,6 +1,6 @@
 ### **Reality's Marketplace: Performance and Participation in Human Truth**
 
-At its core, **communication is not the transmission of fixed truths but a dynamic process of meaning-making** - a negotiation between speaker and listener, each bringing their own interpretive frameworks to the table. (See [[🔓This Statement Cannot be Understood]]) This implies that **meaning is not inherent in words or objects but arises from shared agreement**, much like currency only holds value because we collectively believe it does.  
+At its core, **communication is not the transmission of fixed truths but a dynamic process of meaning-making** - a negotiation between speaker and listener, each bringing their own interpretive frameworks to the table. (See [[This Statement Cannot be Understood]]) This implies that **meaning is not inherent in words or objects but arises from shared agreement**, much like currency only holds value because we collectively believe it does.  
 
 But if meaning is consensus-based, what does this say about *reality itself*?  
 
@@ -69,7 +69,7 @@ Not all consensus is equal. Some dissolve under scrutiny; others adapt.
 - **Cultural Awakenings:**
     - The abolition of slavery, women’s suffrage, and climate change awareness all required dismantling prior consensuses.
 - **Individual Escapes:**
-    - Mystics and philosophers often reject consensus reality (e.g., Buddhism’s "illusion of self," Descartes’ radical doubt). But even their critiques rely on language, a consensus tool. (See [[🔓This Statement Cannot be Understood]])
+    - Mystics and philosophers often reject consensus reality (e.g., Buddhism’s "illusion of self," Descartes’ radical doubt). But even their critiques rely on language, a consensus tool. (See [[This Statement Cannot be Understood]])
 
 **Key Insight:**  
 Reality is **not static but a battleground of competing agreements**.
