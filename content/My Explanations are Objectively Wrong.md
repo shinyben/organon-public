@@ -3,10 +3,9 @@ aliases:
   - Clarity Consensus
   - Objectivity Doesn't Exist but Can Be Approached
 ---
+### **Objectivity Can't Be Reached, Only Approached: The Clarity Consensus**  
 
-### **The Fiction of Objectivity is the Optimized Consensus**  
-
-**Core Thesis:** While all claims to objective truth are grounded in subjective consensus, a "Clarity Consensus" - the linguistic agreement least vulnerable to misinterpretation - demonstrates that mutual understanding can be systematically refined to minimize noise, even within the constraints of collective fiction.  
+**Core Thesis:** While all claims to objective truth are grounded in subjective consensus (see [[This Statement Cannot be Understood]]), a "**Clarity Consensus**" - the linguistic agreement least vulnerable to misinterpretation - demonstrates that mutual understanding can be systematically refined to minimize noise, even within the constraints of collective fiction.  
 
 ---
 
@@ -56,7 +55,7 @@ Critics might argue:
 While all consensus is subjective, not all are equally fragile. A "**Clarity Consensus**" minimizes noise by imposing constraints that reduce interpretive drift:
 - **Constraints:** "Beyond reasonable doubt" is stricter than "pretty sure." The U.S. Supreme Court’s "I know it when I see it" test for obscenity (Jacobellis v. Ohio, 1964) failed because it was too vague; later rulings demanded clearer criteria.  
 - **Feedback:** Code compilers reject ambiguous syntax, unlike natural language. A Python script either runs or throws an error - no "poetic license" for the computer. Similarly, failed understandings can be feedback that, for that audience, our natural language was malformed.
-- **Iterative testing:** Scientific methods (e.g., double-blind trials) reduce wiggle room by standardizing observation. The replication crisis arises when protocols are too loose, letting subjectivity creep back in. Similarly, we can use get better at communication over time.  
+- **Iterative testing:** Scientific methods (e.g., double-blind trials) reduce wiggle room by standardizing observation. The replication crisis arises when protocols are too loose, letting subjectivity creep back in. Similarly, we can use new methods get better at communication over time.  
 
 The elevation of clarity is a value judgment of course - but one that *reduces* the need for further negotiation.  
 
