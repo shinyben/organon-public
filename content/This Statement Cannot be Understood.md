@@ -1,3 +1,7 @@
+---
+aliases:
+  - Consensus Language
+---
 ### **The Paradox of Context-Dependent Communication: Why Language Can’t Be a Perfect Vessel for Truth**  
 
 Communication is always a **negotiation between two shifting frames of reference** - the speaker’s context and the hearer’s context. Both are:  
@@ -7,7 +11,7 @@ Communication is always a **negotiation between two shifting frames of reference
 
 This means **no utterance is ever truly neutral**. Even the most precise definition is a prisoner of its own presuppositions: for example, the word "freedom" means radically different things to a political prisoner, a libertarian economist, and a Buddhist monk. This means **words are not fixed vessels of meaning**. They are better thought of as **triggers for associations**, shaped by personal history, cultural background, and immediate circumstance.
 
-This means **all communication is a negotiation of meaning, not a transfer of it.**[^2] The speaker encodes an idea into language, but the hearer decodes it through their own subjective lens. It is a **consensus meaning**[^1], and webs of consensus meaning form a **consensus reality** (see [[That Thing Named Reality]]).
+This means **all communication is a negotiation of meaning, not a transfer of it.**[^2] The speaker encodes an idea into language, but the hearer decodes it through their own subjective lens. It is a **consensus meaning**[^1], and webs of consensus meaning form a **consensus reality** (see [[That Thing Named Real]]).
 
 ---
 
@@ -43,7 +47,9 @@ Upon receiving the message, the hearer does not passively absorb it - they **ac
 ### **3. The Way Out?**  
 - **Poetry over definitions** (metaphors leave room for the hearer’s imagination).  
 - **Silence over explanation** (what’s unsaid can’t be misquoted and does not persist textually).
-- **Paradox over precision** (to fracture the hearer’s certainty, creating space for insight).  
+- **Paradox over precision** (to fracture the hearer’s certainty, creating space for insight). 
+
+Among all possible linguistic agreements, a **Clarity Consensus** is the one least vulnerable to misinterpretation - proving that mutual understanding can be optimized to minimize noise. (see [[My Explanations are Objectively Wrong]])
 
 **Therefore**:
 1. **Embrace Humility**

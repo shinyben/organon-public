@@ -1,3 +1,8 @@
+---
+aliases:
+  - Chronomantis and Chronoskopos
+  - The Mantis and the Leviathan
+---
 ### **CHRONOMANTIS & CHRONOSKOPOS**  
 **The Two-Eyed Watcher-Prophet of Time’s Beginning and End**  
 Sketch for a modern science-based concept of a primordial time-entity. Think of what Greek *Chronos* would have looked like with Planck-time, quantum uncertainty, spacetime.
