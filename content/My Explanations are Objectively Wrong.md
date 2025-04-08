@@ -32,7 +32,7 @@ These mechanisms are neither neutral nor inevitable - they’re battlegrounds.
 ---
 
 ### **3. Counterarguments → Can We Escape Subjectivity?**  
-**"The map is not the territory—but some maps leak less ink."**
+**"The map is not the territory - but some maps leak less ink."**
 
 Critics argue science transcends language (e.g., math, physics). Yet even equations rely on human interpretation (e.g., quantum theory’s "observer effect"). The real question isn’t escaping subjectivity but minimizing its noise. 
 
