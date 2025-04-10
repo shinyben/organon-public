@@ -53,13 +53,3 @@ While all consensus is subjective, not all are equally fragile. A "**Clarity Con
 
 The elevation of clarity is a value judgment of course - but one that *reduces* the need for further negotiation.  
 
----
-
-### **Final Thought**  
-Truth may be a puppet of consensus, but some strings tangle less than others. The "Clarity Consensus" doesn’t escape the hall of mirrors - it just polishes the glass.  
-
-This essay’s pursuit of clarity? Also a power move.
-
-**Glossary**  
-^1 _See Foucault’s "The Order of Things" on taxonomy as power._  
-^2 _"Observer effect": The idea that measurement changes the observed system._

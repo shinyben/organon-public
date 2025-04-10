@@ -49,7 +49,7 @@ Upon receiving the message, the hearer does not passively absorb it - they **ac
 - **Silence over explanation** (what’s unsaid can’t be misquoted and does not persist textually).
 - **Paradox over precision** (to fracture the hearer’s certainty, creating space for insight). 
 
-Among all possible linguistic agreements, a **Clarity Consensus** is the one least vulnerable to misinterpretation - proving that mutual understanding can be optimized to minimize noise. (see [[My Explanations are Objectively Wrong]])
+Among all possible linguistic agreements, a **Clarity Consensus** is the one least vulnerable to misinterpretation - proving that mutual understanding can be optimized to minimize noise. (see [[These Explanations are Objectively Wrong]])
 
 **Therefore**:
 1. **Embrace Humility**
