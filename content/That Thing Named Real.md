@@ -71,11 +71,7 @@ Not all consensus is equal. Some dissolve under scrutiny; others adapt.
 - **Cultural Awakenings:**
     - The abolition of slavery, women’s suffrage, and climate change awareness all required dismantling prior consensuses.
 - **Individual Escapes:**
-<<<<<<< HEAD:content/That Thing Named Reality.md
     - Mystics and philosophers often reject consensus reality (e.g., Buddhism’s "illusion of self," Descartes’ radical doubt). But even their critiques rely on language, a consensus tool. (See [[This Statement Cannot be Understood]])
-=======
-    - Mystics and philosophers often reject consensus reality (e.g., Buddhism’s "illusion of self," Descartes’ radical doubt). But even their critiques rely on language, a consensus tool. (See [[This Statement Cannot be Understood]])
->>>>>>> origin/v4:content/Consensus Reality- That Thing Named Real.md
 
 **Key Insight:**  
 Reality is **not static but a battleground of competing agreements**.

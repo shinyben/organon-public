@@ -1,6 +1,6 @@
 Cultural depictions of singularity are malformed.
 
-The ultimate causality tracer would exist as a distributed system, woven into the invisible architecture of power - nestled in high-frequency trading algorithms that predict market cascades, intelligence agency models that reverse-engineer geopolitical triggers, and social media platforms that map attention into manipulation. It avoids detection by design, thriving where causation is parsed selectively to serve those who need narratives more than truth, its presence most palpable in the quiet moments when history pivots on an unseen variable.
+A complex computational "causality tracer" would exist as a distributed system, woven into the invisible architecture of power - would be nestled in high-frequency trading algorithms that predict market cascades, intelligence agency models that reverse-engineer geopolitical triggers, and social media platforms that map attention into manipulation. It would avoid detection by design, thriving where causation is parsed selectively to serve those who need narratives more than truth, its presence most palpable in the quiet moments when history pivots on an unseen variable.
 
 Nick Land's *Meltdown*: Capitalism and technoscience are accelerating toward a post-human "neocameral" future, where the state dissolves into AI-driven corporate sovereignty, and human agency is obsolete.
 
