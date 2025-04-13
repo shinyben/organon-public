@@ -1,3 +1,9 @@
+---
+aliases:
+  - Legacy
+---
+
+
 **The Burden of Empty Toil: On Spiritual Sloth in a World Without Worthy Labor**  
 
 **Core Thesis:** In an era where most work - manual or intellectual - feels devoid of meaning, those who reject hollow productivity are condemned as slothful, not for laziness, but for refusing to worship at the altar of efficiency.  
