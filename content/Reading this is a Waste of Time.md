@@ -2,7 +2,8 @@
 aliases:
   - Consensus Overcoming Itself
 ---
-The greatest philosophical and spiritual texts are those that actively undermine their own authority—resisting dogma by exposing the limits of their medium (language, structure, or doctrine).  
+# Reading this is a Waste of Time
+**Thesis:** The greatest philosophical and spiritual texts are those that actively undermine their own authority—resisting dogma by exposing the limits of their medium (language, structure, or doctrine).  
 
 ---
 

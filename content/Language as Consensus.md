@@ -2,7 +2,7 @@
 aliases:
   - Consensus Language
 ---
-### **The Paradox of Context-Dependent Communication: Why Language Can’t Be a Perfect Vessel for Truth**  
+# **This Statement Cannot be Understood: Why Language Can’t Be a Perfect Vessel for Truth**  
 
 Communication is always a **negotiation between two shifting frames of reference** - the speaker’s context and the hearer’s context. Both are:  
 - **Temporal** (shaped by moment, mood, memory),  
@@ -11,7 +11,7 @@ Communication is always a **negotiation between two shifting frames of reference
 
 This means **no utterance is ever truly neutral**. Even the most precise definition is a prisoner of its own presuppositions: for example, the word "freedom" means radically different things to a political prisoner, a libertarian economist, and a Buddhist monk. This means **words are not fixed vessels of meaning**. They are better thought of as **triggers for associations**, shaped by personal history, cultural background, and immediate circumstance.
 
-This means **all communication is a negotiation of meaning, not a transfer of it.**[^2] The speaker encodes an idea into language, but the hearer decodes it through their own subjective lens. It is a **consensus meaning**[^1], and webs of consensus meaning form a **consensus reality** (see [[That Thing Named Real]]).
+This means **all communication is a negotiation of meaning, not a transfer of it.**[^2] The speaker encodes an idea into language, but the hearer decodes it through their own subjective lens. It is a **consensus meaning**[^1], and webs of consensus meaning form a **consensus reality** (see [[Reality as Consensus]]).
 
 ---
 

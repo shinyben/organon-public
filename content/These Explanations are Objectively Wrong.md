@@ -5,7 +5,7 @@ aliases:
 ---
 ### **Objectivity Can't Be Reached, Only Approached: The Clarity Consensus**  
 
-**Core Thesis:** While all claims to objective truth are grounded in subjective consensus (see [[This Statement Cannot be Understood]]), a "**Clarity Consensus**" - the linguistic agreement least vulnerable to misinterpretation - demonstrates that mutual understanding can be systematically refined to minimize noise, even within the constraints of collective fiction.  
+**Core Thesis:** While all claims to objective truth are grounded in subjective consensus (see [[Language as Consensus]]), a "**Clarity Consensus**" - the linguistic agreement least vulnerable to misinterpretation - demonstrates that mutual understanding can be systematically refined to minimize noise, even within the constraints of collective fiction.  
 
 ---
 
