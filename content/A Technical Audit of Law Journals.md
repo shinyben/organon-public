@@ -1,6 +1,10 @@
-Hi, I'm Ben, a 1L at UNC Law. My hope in starting law school was that I would be able to apply my subject matter expertise from my AI research at MIT to the legal field. In reading through contemporary legal scholarship, I find that the technical details of AI are often misunderstood, and occasionally inferences are drawn from those misunderstandings which cascade into disastrous policy recommendations. 
+Hi, I'm Ben, a 1L at UNC Law. I'm looking to apply my subject matter expertise (AI research at MIT) to law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
-This prompted me to create this document. I am actively writing papers Most notably, that cascade has seemed to yield the largest removal of First Amendment protections ever advanced, as well as a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update. 
+Most notably this cascade has yielded 
+- the largest removal of First Amendment protections ever advanced (Stanford)
+- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
+
+These findings prompted me to create this document, meant to be readable for a general audience. I am actively writing papers on the major issues and will, if I remember, put all issues I identify on this list. 
 
 # Yale
 
@@ -10,6 +14,12 @@ This prompted me to create this document. I am actively writing papers Most nota
 How objective is the issue? - Objective
 How central is the issue to the article? - Central. The title itself is a reference to the technical issue
 What's the outcome if the article is adopted - A tort regime for LLMs that tech firms can thwart with near-zero cost
+
+I'm very proud of this paper, which involved an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexus do a thorough check). 
+
+L-continuity is the essential formal property that makes a product verifiably safe (or, currently, unsafe) at AI scale, and I expect it will be hard for law to handle the pacing problem (tech evolving faster than doctrine can regulate) in torts without reliance on it.
+
+SSRN paste here
 
 # Harvard
 
@@ -33,7 +43,9 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 # Stanford
 
-
+How objective is the issue? - Subjective
+How central is the issue to the article? - It is the core of the article
+What's the outcome if the article is adopted - First Amendment protections are removed from the outputs of systems involving gradient descent, which is a much more sweeping ban than a targeted removal of protections for social media content moderation algorithms
 
 # UChicago
 
@@ -46,3 +58,19 @@ What's the outcome if the article is adopted - There is no doctrinal recommendat
 
 > Causal AI is within reach.
 
+The main issue is the quote 
+> The frontier problem in the field of causal inference concerns the \[external\] variables . . . . If it were possible to rule out . . . that any variables that remained \[outside\] the model influence the \[internal\] variables in a way that distorts the . . . model . . . then causal analysis could be formalized and computerized in full." [^2]
+
+To completely rule out external interference, you would first have to list every single variable in the universe and prove it has zero impact. Because you cannot enumerate an infinite number of background factors, a causal model can never be perfectly sealed from the outside world. It is hard to envision this as a frontier problem - consensus seems to be that causal completeness is not mathematically decidable from data alone.
+
+A second issue is that this "If X then Y" statement then being used as a lead-in for saying "This ***will*** mark a major step in the development of digital systems" and as the justification for the abstract's opener, "Causal AI is within reach." This is an unwarranted inductive leap from a hypothetical to a certainty.
+
+Finally, exogenous variables (what I simplified to "external" variables) are misidentified, which may be the core of this paragraph. The paper says
+
+> exogenous variables, these \[undefined\]\[ \]variables are excluded[^3] from causal models and treated as given.
+
+However what the reasoning in the paragraph relies on is *omitted/unmodeled* variables, not the variables the model already knows about and has chosen to set aside from causality and treat as given. It is much harder to rule out that all the infinite variables in the world don't impact your model than make that same judgement about the ones you already have in hand. Swapping them is what leads to this paragraph's seismic claim.
+
+[^2]: The frontier problem in the field of causal inference concerns the exogenous variables and their bearing on the adequacy and completeness of causal models. If it were possible to rule out, with the help of computer-assisted mathematical analysis, that any variables that remained exogenous to the model influence the endogenous variables in a way that distorts the causal model, including its structural equations, then causal analysis could be formalized and computerized in full. Computers equipped with the necessary software could take over and extrapolate causal relationships from sets of observational data. Once digital machines understand the concept of causation, one can speak of Causal AI. This will mark a major step in the development of digital systems truly deserving the label of artificial intelligence. With an understanding of causation, many errors and hallucinations that are characteristic of the current generation of large language models *will* disappear. 
+
+[^3]: Structural causal **models** actually *include* exogenous variables, but the modeled **system** *excludes* them. That is, the whole description of the world sees that they are there, but they aren't part of the core causal relationship described. But this is too nitpick-y
