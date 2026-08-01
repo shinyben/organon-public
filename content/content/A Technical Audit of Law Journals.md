@@ -1,10 +1,10 @@
-Hi, I'm Ben, a 1L at UNC Law. I'm looking to apply my subject matter expertise (AI research at MIT) to law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
+Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
-- the largest removal of First Amendment protections ever advanced (Stanford)
+- the largest removal of First Amendment protections ever advanced ([[A Technical Audit of Law Journals#*Speech Certainty Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)|Speech Certainty Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
 - a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
 
-These findings prompted me to create this document, meant to be readable for a general audience. I am actively writing papers on the major issues and will, if I remember, put all issues I identify on this list. 
+These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
 
 # Yale
 
@@ -16,11 +16,11 @@ How objective is the issue? - Objective
 How central is the issue to the article? - Central. The title itself is a reference to the technical issue
 What's the outcome if the article is adopted - A tort regime for LLMs that tech firms can thwart with near-zero cost
 
-I'm very proud of this paper, which involved an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexus do a thorough check). 
+I'm very proud of this paper, which involves an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexus do a thorough check). 
 
 L-continuity is the essential formal property that makes a product verifiably safe (or, currently, unsafe) at AI scale, and I expect it will be hard for law to handle the pacing problem (tech evolving faster than doctrine can regulate) in torts without reliance on it.
 
-SSRN paste here
+SSRN paste here ^b88360
 
 # Harvard
 
@@ -36,7 +36,7 @@ What's the outcome if the article is adopted - The issue doesn't affect doctrina
 
 > A systematic sweep across nine values, ranging from fully deterministic (0) to maximally stochastic (2)
 
-The paper characterizes temperature as a spectrum from "more" deterministic to more stochastic. 
+The paper characterizes temperature as a spectrum from "more" deterministic to more stochastic.  ^0f2b53
 
 1. The axis is wrong. Stochasticity (variedness/randomness) is not the opposite of determinism: nondeterminism is. 
 2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] 
@@ -45,7 +45,7 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 # Stanford
 
-## *Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*, Sta. L. Rev. 77 (2025)
+## *Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)
 **[Source](https://review.law.stanford.edu/wp-content/uploads/sites/3/2025/01/Austin-Levy-77-Stan.-L.-Rev.-1.pdf)**
 
 Who wrote it? - Two practitioners, both Stanford Law alums
@@ -99,7 +99,7 @@ What's the outcome if the article is adopted - Low risk due to low centrality
 
 This and and the claims around it swap the roles of precision, accuracy, and false positive rate. For example "accuracy of the algorithm eroded from 11%" seems to then use the same 89% "false positive" number as accuracy (since 100% - 89% = 11%). 
 
-Far from being an 89% false positive rate, the source cited for this footnote says the rate is <1%. 
+Far from being an 89% false positive rate, the source cited in this footnote says the rate is <1%. 
 
 ## *Deepfake Liability*, N.C. L. Rev. 104 (2026)
 [Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr)
@@ -112,11 +112,40 @@ What's the outcome if the article is adopted - Only slight effectiveness
 The Article suggests, as one of three prescriptions
 > requiring companies to only release their code under an open-source license prohibiting the removal of basic safeguards
 
-However this suggestion goes against the [definition of open-source](https://opensource.org/osd) which says "The license must allow modifications and derived works" and "The license must not restrict anyone from making use of the program in a specific field of endeavor." A similar attempt a similarly "ethical license" has already been made and shut down. Stable Diffusion, the main model that causes these issues, is already released under a non-open license that prohibits deep fakes - but it is the main source of issues. It would be a minor edit to simply say "well then not open source" but that would cause problems for adoption: many enterprises can only work with open source. The prescription itself seems to need more stability in dealing with the license economy.
+However this suggestion goes against the [definition of open-source](https://opensource.org/osd) which says "The license must allow modifications and derived works" and "The license must not restrict anyone from making use of the program in a specific field of endeavor." A similar attempt a similarly "ethical license" has already been made and shut down. Stable Diffusion, the main model that causes these issues, is already released under a non-open license that prohibits deep fakes - but it is still the main source of issues. It would be a minor edit to simply say "well then not open source" but that would cause problems for adoption: many enterprises can only work with open source. The prescription itself seems to need more grounding in the complexity of software licensing.
 
-Another prescription is watermarking and relying on source code being difficult to edit (involving expertise). However a large subjective issue is raised here. The Article deals in "source code release" and never touches the important part: weight release. The models are out in the world, not just the code that generated/helps the models. 
+Another prescription is watermarking and relying on source code being difficult to edit (involving expertise). However a large subjective issue is raised here. The Article deals in "source code release" and never touches the important part: weight release. The model weights are out in the world, not just the code that generated the models. 
 
-Stable Diffusion, for example, was a release of weights and weights-to-output code, not just source code. Weights being in the wild bypasses the need to edit source code (the expertise claim), since the weights are what a malicious actor would want to get from that source code anyway. Similarly, the watermarking (which gets optionally bolted onto the weights by the source code) is ineffective because the weights are out there in the wild, and weights can't have watermarks bolted on.  The word "weight" does not come up at all in the article, despite weights being the central object of interest to third party developers.
+Stable Diffusion, for example, was a release of weights and weights-to-output code, not just source code. Weights being in the wild bypasses the need to edit source code (the expertise claim), since the weights are what a malicious actor would want to get from that source code anyway. Similarly, the watermarking (which gets optionally bolted onto the weights by the source code) is ineffective because the weights are out there in the wild, and weights on their own can't have watermarks bolted on.  The word "weight" does not come up at all in the article, despite weights being the central object of interest to third party developers. This seems to raise many questions.
+
+# NeurIPS (Generally Understood to be the Best AI/ML Conference)
+
+## *Prohibiting Generative AI in Any Form of Weapon Control*, 39TH Conf. on Neural Info. Processing Sys (2025)
+[Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
+
+Who wrote it? - GMU Professor, (previously UVA Systems Engineering PhD, Duke Professorship)
+How objective is the issue? - Objective
+How central is the issue to the article? - I just read the technical part so I don't know
+What's the outcome if the article is adopted - No idea 
+
+This paper is cited in [[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. I say at fn.9 
+
+> Cummings does not substantiate the Note’s key premise, though. Hers is a policy position paper, rather than an empirical paper seeking formal correctness. Read in context, it is not a substantiated claim that—literally interpreted—all connectionist AI models are neural networks, or that all neural networks are non-deterministic, or that no two outputs of the same input are ever the same. Such literal claims would contradict the Note’s other sources and are easily falsified.
+
+Getting into her paper seemed too in the weeds for a student response, but I find my equivocation "not seeking formal correctness" to be incomplete. Her paper uses this sentence as setup
+> Also known as neural networks, connectionist AI models are non-deterministic, meaning every time they are run, even with the same input, the outputs will be different
+
+There are three propositions in this sentence:
+1. Connectionist AI models are also known as neural networks
+2. Connectionist AI models are non-deterministic
+3. Every time non-deterministic networks are run, the outputs will be different
+
+All three propositions are wrong. 
+1. Bayesian Belief Networks are connectionist AI models that are not neural networks
+2. ![[A Technical Audit of Law Journals#^b88360]]
+3. Outputs "will" be different means you will never get the same output. Should replace "will" with "can"
+
+The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[A Technical Audit of Law Journals#^0f2b53]].
 
 # Disclaimer
 
