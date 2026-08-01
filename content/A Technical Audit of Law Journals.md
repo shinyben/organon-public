@@ -6,8 +6,6 @@ Most notably this cascade has yielded
 
 These findings prompted me to create this document, meant to be readable for a general audience. I am actively writing papers on the major issues and will, if I remember, put all issues I identify on this list. 
 
-I'd like to generally disclaim that I'm going to state things without the standard "but I may be wrong" equivocations but, in general, you can assume I meant it to be there in spirit.
-
 # Yale
 
 ## *Nondeterministic Torts: A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)
@@ -120,7 +118,9 @@ Another prescription is watermarking and relying on source code being difficult 
 
 Stable Diffusion, for example, was a release of weights and weights-to-output code, not just source code. Weights being in the wild bypasses the need to edit source code (the expertise claim), since the weights are what a malicious actor would want to get from that source code anyway. Similarly, the watermarking (which gets optionally bolted onto the weights by the source code) is ineffective because the weights are out there in the wild, and weights can't have watermarks bolted on.  The word "weight" does not come up at all in the article, despite weights being the central object of interest to third party developers.
 
+# Disclaimer
 
+I'd like to generally disclaim that although I state things like "X is true," everything should be read with "it seems to me that X is true" or similar asterisks being there in spirit.
 
 [^2]: The frontier problem in the field of causal inference concerns the exogenous variables and their bearing on the adequacy and completeness of causal models. If it were possible to rule out, with the help of computer-assisted mathematical analysis, that any variables that remained exogenous to the model influence the endogenous variables in a way that distorts the causal model, including its structural equations, then causal analysis could be formalized and computerized in full. Computers equipped with the necessary software could take over and extrapolate causal relationships from sets of observational data. Once digital machines understand the concept of causation, one can speak of Causal AI. This will mark a major step in the development of digital systems truly deserving the label of artificial intelligence. With an understanding of causation, many errors and hallucinations that are characteristic of the current generation of large language models *will* disappear. 
 
