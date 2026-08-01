@@ -141,7 +141,7 @@ There are three propositions in this sentence:
 3. Every time non-deterministic networks are run, the outputs will be different
 
 All three propositions are wrong. 
-1. Bayesian Belief Networks are connectionist AI models that are not neural networks
+1. E.g., Discrete Dynamical Networks are connectionist AI models that are not neural networks. While "connectionist = neural net" is common shorthand nowadays it is not formally correct
 2. ![[public/A Technical Audit of Law Journals#^b88360]]
 3. Outputs "will" be different means you will never get the same output. Should replace "will" with "can"
 
