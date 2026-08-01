@@ -1,10 +1,12 @@
-Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
+Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI and similar objects are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
 - the largest removal of First Amendment protections ever advanced ([[public/A Technical Audit of Law Journals#*Speech Certainty Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)|Speech Certainty Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
 - a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
 
-These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
+These findings prompted me to create this document of potential issues I've identified, meant to be readable for and helpful to a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). As a 1L with very limited legal knowledge most of my comments will be technical replies/corrections. Once I have sufficient law context I hope to collate these into a paper dealing with a topic I pick myself.
+
+My best work is first:
 
 # Yale
 
@@ -22,6 +24,7 @@ L-continuity is the essential formal property that makes a product verifiably sa
 
 SSRN paste here ^b88360
 
+The Note also misdates its Chann citation 
 # Harvard
 
 ## *Traditional and Computational Canons*, 39 HARV. J.L. & TECH. 287 (2025)
@@ -118,6 +121,8 @@ Another prescription is watermarking and relying on source code being difficult 
 
 Stable Diffusion, for example, was a release of weights and weights-to-output code, not just source code. Weights being in the wild bypasses the need to edit source code (the expertise claim), since the weights are what a malicious actor would want to get from that source code anyway. Similarly, the watermarking (which gets optionally bolted onto the weights by the source code) is ineffective because the weights are out there in the wild, and weights on their own can't have watermarks bolted on.  The word "weight" does not come up at all in the article, despite weights being the central object of interest to third party developers. This seems to raise many questions.
 
+Little detail, the article also mixes up the years of its 464% increase. 
+
 # NeurIPS (Generally Understood to be the Best AI/ML Conference)
 
 ## *Prohibiting Generative AI in Any Form of Weapon Control*, 39TH Conf. on Neural Info. Processing Sys (2025)
@@ -140,8 +145,8 @@ There are three propositions in this sentence:
 2. Connectionist AI models are non-deterministic
 3. Every time non-deterministic networks are run, the outputs will be different
 
-All three propositions are wrong. 
-1. E.g., Discrete Dynamical Networks are connectionist AI models that are not neural networks. While "connectionist = neural net" is common shorthand nowadays it is not formally correct
+All three propositions are questionable. 
+1. Discrete Dynamical Networks, e.g., are connectionist AI models that are not neural networks. While "connectionist = neural net" is common shorthand nowadays, it is not formally correct
 2. ![[public/A Technical Audit of Law Journals#^b88360]]
 3. Outputs "will" be different means you will never get the same output. Should replace "will" with "can"
 
