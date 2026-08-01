@@ -88,6 +88,21 @@ Finally, exogenous variables (what I simplified to "external" variables) are mis
 
 However what the reasoning in the paragraph relies on is *omitted/unmodeled* variables, not the variables the model already knows about and has chosen to set aside from causality and treat as given. It is much harder to rule out that all the infinite variables in the world don't impact your model than make that same judgement about the ones you already have in hand. Swapping them is what leads to this paragraph's seismic claim.
 
+# Berkeley
+
+## *AI’s Future May Be Quantum*, Berkeley Technology Law Journal (Blogpost) (2026)
+[Source](https://btlj.org/2026/02/ais-future-may-be-quantum/)
+
+(The exposition questions aren't relevant here, it's a student blog explaining the landscape)
+
+The article's
+
+> qubits "can be 0 and 1 at the same time. That means a quantum computer can handle multiple calculations in parallel
+
+is answered pretty directly by Scott Aaronson, Professor of Computer Science at UT Austin:
+
+> The single most common misconception, which you find repeated in almost every popular article about the subject that is written says, well, a classical computer is made of bits, and so it can just try each possible solution one by one, but a quantum computer is made of qubits, which can be zero and one at the same time . . . . Well, that is gesturing towards something in the vicinity of the truth, but it’s also very seriously misleading. It leads people to think that quantum computers would have capabilities that actually we don’t think that they would have. This is not even controversial within this field, right. We all know this, but it’s very hard to get the message out. [src](https://www.ycombinator.com/blog/scott-aaronson-on-computational-complexity-theory-and-quantum-computers/?utm_source=chatgpt.com)
+
 # UNC
 
 ## *Disability Discrimination by Clinical Algorithm*, N.C. L. Rev. 103 (2025)
