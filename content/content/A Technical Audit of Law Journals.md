@@ -1,8 +1,8 @@
 Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
-- the largest removal of First Amendment protections ever advanced ([[A Technical Audit of Law Journals#*Speech Certainty Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)|Speech Certainty Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
-- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
+- the largest removal of First Amendment protections ever advanced ([[public/A Technical Audit of Law Journals#*Speech Certainty Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)|Speech Certainty Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
+- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
 
 These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
 
@@ -29,7 +29,7 @@ SSRN paste here ^b88360
 
 Who wrote it? - UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
 How objective is the issue? - Objective
-How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
+How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
 What's the outcome if the article is adopted - The issue doesn't affect doctrinal recommendations
 
 > Lower temperatures (e.g., 0) make outputs more deterministic, while higher temperatures (e.g., 1–2) make them more varied.
@@ -40,7 +40,7 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 
 1. The axis is wrong. Stochasticity (variedness/randomness) is not the opposite of determinism: nondeterminism is. 
 2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] 
-3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)]]
+3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)]]
 
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 # Stanford
@@ -128,7 +128,7 @@ How objective is the issue? - Objective
 How central is the issue to the article? - I just read the technical part so I don't know
 What's the outcome if the article is adopted - No idea 
 
-This paper is cited in [[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. I say at fn.9 
+This paper is cited in [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. I say at fn.9 
 
 > Cummings does not substantiate the Note’s key premise, though. Hers is a policy position paper, rather than an empirical paper seeking formal correctness. Read in context, it is not a substantiated claim that—literally interpreted—all connectionist AI models are neural networks, or that all neural networks are non-deterministic, or that no two outputs of the same input are ever the same. Such literal claims would contradict the Note’s other sources and are easily falsified.
 
@@ -142,10 +142,10 @@ There are three propositions in this sentence:
 
 All three propositions are wrong. 
 1. Bayesian Belief Networks are connectionist AI models that are not neural networks
-2. ![[A Technical Audit of Law Journals#^b88360]]
+2. ![[public/A Technical Audit of Law Journals#^b88360]]
 3. Outputs "will" be different means you will never get the same output. Should replace "will" with "can"
 
-The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[A Technical Audit of Law Journals#^0f2b53]].
+The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[public/A Technical Audit of Law Journals#^0f2b53]].
 
 # Disclaimer
 
