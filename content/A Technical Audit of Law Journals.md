@@ -2,8 +2,8 @@
 Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
-- the largest removal of First Amendment protections ever advanced ([[#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
-- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
+- the largest removal of First Amendment protections ever advanced ([[#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
+- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
 
 These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
 
@@ -33,7 +33,7 @@ SSRN paste here ^b88360
 ```
 Who wrote it? - UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
 How objective is the issue? - Objective
-How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
+How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
 What's the outcome if the article is adopted - The issue doesn't affect doctrinal recommendations
 ```
 
@@ -45,7 +45,7 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 
 1. The axis is wrong. Stochasticity (variedness/randomness) is not the opposite of determinism: nondeterminism is. 
 2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] 
-3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
+3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
 
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 
@@ -61,7 +61,7 @@ What's the outcome if the article is adopted - Unsure, TODO: double check the No
 
 > Traditional algorithms are deterministic... In contrast, an ML (machine learning) model can dynamically learn and adjust its approach as it is used
 
-This is another determinism-related confusion, much like [[#*Traditional and Computational Canons*|Traditional and Computational Canons, 39 HARV. J.L. & TECH. 287 (2025)]] and to a somewhat lesser degree [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
+This is another determinism-related confusion, much like [[#*Traditional and Computational Canons*|Traditional and Computational Canons]] and to a somewhat lesser degree [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
 
 Machine learning models do not learn or adjust as they are used. Once a model is trained, it generally does not update at all. ChatGPT and Claude models are fixed formulas and do not learn directly from users asking them questions. However the companies that develop them capture that user data and use it to train other models later.
 
@@ -164,7 +164,7 @@ How central is the issue to the article? - I just read the technical part so I d
 What's the outcome if the article is adopted - No idea 
 ```
 
-This paper is cited in [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. I say at fn.9 
+This paper is cited in [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. I say at fn.9 
 
 > Cummings does not substantiate the Note’s key premise, though. Hers is a policy position paper, rather than an empirical paper seeking formal correctness. Read in context, it is not a substantiated claim that—literally interpreted—all connectionist AI models are neural networks, or that all neural networks are non-deterministic, or that no two outputs of the same input are ever the same. Such literal claims would contradict the Note’s other sources and are easily falsified.
 
