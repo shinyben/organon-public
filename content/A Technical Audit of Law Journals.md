@@ -2,20 +2,22 @@
 Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
-- the largest removal of First Amendment protections ever advanced ([[public/A Technical Audit of Law Journals#*Speech Certainty Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)|Speech Certainty Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
-- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
+- the largest removal of First Amendment protections ever advanced ([[#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment, Stan. L. Rev. 77 (2025)]])
+- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J.]])
 
 These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
 
 # Yale
 
-## *Nondeterministic Torts: A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)
-[Source](https://yalelawjournal.org/note/nondeterministic-torts-a-technical-approach-to-ai-liability)
+## *Nondeterministic Torts: A Technical Approach to AI Liability* 
+135 Yale L.J. 2719 (2026) [Source](https://yalelawjournal.org/note/nondeterministic-torts-a-technical-approach-to-ai-liability)
 
+```
 Who wrote it? - Yale Student Note
 How objective is the issue? - Objective
 How central is the issue to the article? - Central. The title itself is a reference to the technical issue
 What's the outcome if the article is adopted - A tort regime for LLMs that tech firms can thwart with near-zero cost
+```
 
 I'm very proud of this paper, which involves an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexus do a thorough check). 
 
@@ -25,13 +27,15 @@ SSRN paste here ^b88360
 
 # Harvard
 
-## *Traditional and Computational Canons*, 39 HARV. J.L. & TECH. 287 (2025)
-[Source](https://jolt.law.harvard.edu/assets/articlePDFs/v39.1/Traditional-and-Computational-Canons.pdf)
+## *Traditional and Computational Canons*
+[Source](https://jolt.law.harvard.edu/assets/articlePDFs/v39.1/Traditional-and-Computational-Canons.pdf) 39 HARV. J.L. & TECH. 287 (2025)
 
+```
 Who wrote it? - UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
 How objective is the issue? - Objective
-How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
+How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
 What's the outcome if the article is adopted - The issue doesn't affect doctrinal recommendations
+```
 
 > Lower temperatures (e.g., 0) make outputs more deterministic, while higher temperatures (e.g., 1–2) make them more varied.
 
@@ -41,20 +45,23 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 
 1. The axis is wrong. Stochasticity (variedness/randomness) is not the opposite of determinism: nondeterminism is. 
 2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] 
-3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
+3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]
 
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 
-## *Machine Rulemaking: Arbitrary and Capricious Review in the Age of AI*, 138 Harv. L. Rev. 1821 (2025)
+## *Machine Rulemaking: Arbitrary and Capricious Review in the Age of AI*
+[Source](https://harvardlawreview.org/print/vol-138/machine-rulemaking-arbitrary-and-capricious-review-in-the-age-of-ai/) 138 Harv. L. Rev. 1821 (2025)
 
+```
 Who wrote it? - Anonymous Harvard Student
 How objective is the issue? - Objective
 How central is the issue to the article? - It is the core of the article
 What's the outcome if the article is adopted - Unsure, TODO: double check the Note's claim is represented correctly
+```
 
 > Traditional algorithms are deterministic... In contrast, an ML (machine learning) model can dynamically learn and adjust its approach as it is used
 
-This is another determinism-related confusion, much like [[A Technical Audit of Law Journals#*Traditional and Computational Canons*, 39 HARV. J.L. & TECH. 287 (2025)|Traditional and Computational Canons, 39 HARV. J.L. & TECH. 287 (2025)]] and to a somewhat lesser degree [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
+This is another determinism-related confusion, much like [[#*Traditional and Computational Canons*|Traditional and Computational Canons, 39 HARV. J.L. & TECH. 287 (2025)]] and to a somewhat lesser degree [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
 
 Machine learning models do not learn or adjust as they are used. Once a model is trained, it generally does not update at all. ChatGPT and Claude models are fixed formulas and do not learn directly from users asking them questions. However the companies that develop them capture that user data and use it to train other models later.
 
@@ -64,13 +71,15 @@ As an aside: online algorithms are also not a uniquely machine learning techniqu
 
 # Stanford
 
-## *Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*, Stan. L. Rev. 77 (2025)
-**[Source](https://review.law.stanford.edu/wp-content/uploads/sites/3/2025/01/Austin-Levy-77-Stan.-L.-Rev.-1.pdf)**
+## *Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*
+**[Source](https://review.law.stanford.edu/wp-content/uploads/sites/3/2025/01/Austin-Levy-77-Stan.-L.-Rev.-1.pdf)** Stan. L. Rev. 77 (2025)
 
+```
 Who wrote it? - Two practitioners, both Stanford Law alums
 How objective is the issue? - Subjective, but sometimes objective
 How central is the issue to the article? - It is the core of the article
 What's the outcome if the article is adopted - First Amendment protections are removed from the outputs of systems involving gradient descent, which is a much more sweeping ban than a targeted removal of protections for social media content moderation algorithms
+```
 
 > three fundamental characteristics of machine learning: (1) machine learning algorithms write their own rules; (2) machine learning programmers cannot explain those rules; and (3) the algorithms’ predictions are guaranteed to be wrong at least some of the time. Together, as we explore in Part IV, these characteristics prove decisive in the First Amendment analysis
 
@@ -81,13 +90,15 @@ What is a rule? What does it mean for an algorithm to "write its own" rules when
 SSRN paste here
 # UChicago
 
-## *Causal AI—A VISOR for the Law of Torts*, U. Chi. L. Rev. Online (2024)
-[Source](https://lawreview.uchicago.edu/online-archive/causal-ai-visor-law-torts) 
+## *Causal AI—A VISOR for the Law of Torts*
+[Source](https://lawreview.uchicago.edu/online-archive/causal-ai-visor-law-torts)  U. Chi. L. Rev. Online (2024)
 
+```
 Who wrote it? - Humboldt University Law Professor
 How objective is the issue? - Subjective
 How central is the issue to the article? - Central. The title itself is a reference to the technical issue
 What's the outcome if the article is adopted - There is no doctrinal recommendation as this is an article that simply predicts future outcomes. Low risk
+```
 
 > Causal AI is within reach.
 
@@ -106,13 +117,15 @@ However what the reasoning in the paragraph relies on is *omitted/unmodeled* var
 
 # UNC
 
-## *Disability Discrimination by Clinical Algorithm*, N.C. L. Rev. 103 (2025)
-**[Source](https://scholarship.law.unc.edu/nclr/vol103/iss1/5/)**
+## *Disability Discrimination by Clinical Algorithm*
+**[Source](https://scholarship.law.unc.edu/nclr/vol103/iss1/5/)** N.C. L. Rev. 103 (2025)
 
+```
 Who wrote it? - UW Law Professor, Indiana Law Professor
 How objective is the issue? - Objective
 How central is the issue to the article? - Hard to tell. It does undercut a very emphasized claim but there seems to be additional parallel evidence (interviews etc.) that make the same point
 What's the outcome if the article is adopted - Low risk due to low centrality
+```
 
 > (n.128) the algorithm generated false positives eighty-nine percent of the time
 
@@ -120,13 +133,15 @@ This and and the claims around it swap the roles of precision, accuracy, and fal
 
 Far from being an 89% false positive rate, the source cited in this footnote says the rate is <1%. 
 
-## *Deepfake Liability*, N.C. L. Rev. 104 (2026)
-[Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr)
+## *Deepfake Liability*
+[Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr) N.C. L. Rev. 104 (2026)
 
+```
 Who wrote it? - Postdoc at the Hebrew University of Jerusalem, WashU Law Professor (Visiting), Penn Carey Law Professor
 How objective is the issue? - Objective, large subjective
 How central is the issue to the article? - The subjective is central
 What's the outcome if the article is adopted - Only slight effectiveness 
+```
 
 The Article suggests, as one of three prescriptions
 > requiring companies to only release their code under an open-source license prohibiting the removal of basic safeguards
@@ -142,12 +157,14 @@ Stable Diffusion, for example, was a release of weights and weights-to-output co
 ## *Prohibiting Generative AI in Any Form of Weapon Control*, 39TH Conf. on Neural Info. Processing Sys (2025)
 [Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
 
+```
 Who wrote it? - GMU Professor, (previously UVA Systems Engineering PhD, Duke Professorship)
 How objective is the issue? - Objective
 How central is the issue to the article? - I just read the technical part so I don't know
 What's the outcome if the article is adopted - No idea 
+```
 
-This paper is cited in [[public/A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*, 135 Yale L.J. 2719 (2026)|Nondeterministic Torts A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. I say at fn.9 
+This paper is cited in [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability, 135 Yale L.J. 2719 (2026)]]. I say at fn.9 
 
 > Cummings does not substantiate the Note’s key premise, though. Hers is a policy position paper, rather than an empirical paper seeking formal correctness. Read in context, it is not a substantiated claim that—literally interpreted—all connectionist AI models are neural networks, or that all neural networks are non-deterministic, or that no two outputs of the same input are ever the same. Such literal claims would contradict the Note’s other sources and are easily falsified.
 
@@ -159,10 +176,10 @@ There are two important propositions in this sentence:
 2. Every time non-deterministic networks are run, the outputs will be different
 
 They are each incorrect: 
-1. ![[public/A Technical Audit of Law Journals#^b88360]]
+1. ![[#^b88360]]
 2. Outputs "will" be different means you will never get the same output. The paper should replace "will" with "can"
 
-The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[public/A Technical Audit of Law Journals#^0f2b53]].
+The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[#^0f2b53]].
 
 # Disclaimer
 
