@@ -33,7 +33,7 @@ SSRN paste here ^b88360
 ```
 Who wrote it? - UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
 How objective is the issue? - Objective
-How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
+How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize the Yale Nondeterministic Torts Note
 What's the outcome if the article is adopted - The issue doesn't affect doctrinal recommendations
 ```
 
@@ -115,6 +115,21 @@ Finally, exogenous variables (what I simplified to "external" variables) are mis
 
 However what the reasoning in the paragraph relies on is *omitted/unmodeled* variables, not the variables the model already knows about and has chosen to set aside from causality and treat as given. It is much harder to rule out that all the infinite variables in the world don't impact your model than make that same judgement about the ones you already have in hand. Swapping them is what leads to this paragraph's seismic claim.
 
+# Berkeley
+
+## *AI’s Future May Be Quantum*, Berkeley Technology Law Journal (Blogpost) (2026)
+[Source](https://btlj.org/2026/02/ais-future-may-be-quantum/)
+
+(The exposition questions aren't relevant here, it's a student blog explaining the landscape)
+
+The article's
+
+> qubits "can be 0 and 1 at the same time. That means a quantum computer can handle multiple calculations in parallel
+
+is answered pretty directly by Scott Aaronson, Professor of Computer Science at UT Austin:
+
+> The single most common misconception, which you find repeated in almost every popular article about the subject that is written says, well, a classical computer is made of bits, and so it can just try each possible solution one by one, but a quantum computer is made of qubits, which can be zero and one at the same time . . . . Well, that is gesturing towards something in the vicinity of the truth, but it’s also very seriously misleading. It leads people to think that quantum computers would have capabilities that actually we don’t think that they would have. This is not even controversial within this field, right. We all know this, but it’s very hard to get the message out. [src](https://www.ycombinator.com/blog/scott-aaronson-on-computational-complexity-theory-and-quantum-computers/?utm_source=chatgpt.com)
+
 # UNC
 
 ## *Disability Discrimination by Clinical Algorithm*
@@ -179,11 +194,11 @@ They are each incorrect:
 1. ![[#^b88360]]
 2. Outputs "will" be different means you will never get the same output. The paper should replace "will" with "can"
 
-The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[#^0f2b53]].
+The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here ![[A Technical Audit of Law Journals#^0f2b53]]
 
 # Disclaimer
 
-I'd like to generally disclaim that although I state things like "X is true," everything should be read with "it seems to me that X is true" or similar "I could definitely be wrong on this" asterisks being there in spirit
+I'd like to generally disclaim that although I state things like "X is true," everything should be read with "it seems to me that X is true" or with similar "I could definitely be wrong on this" asterisks being there in spirit
 
 [^2]: The frontier problem in the field of causal inference concerns the exogenous variables and their bearing on the adequacy and completeness of causal models. If it were possible to rule out, with the help of computer-assisted mathematical analysis, that any variables that remained exogenous to the model influence the endogenous variables in a way that distorts the causal model, including its structural equations, then causal analysis could be formalized and computerized in full. Computers equipped with the necessary software could take over and extrapolate causal relationships from sets of observational data. Once digital machines understand the concept of causation, one can speak of Causal AI. This will mark a major step in the development of digital systems truly deserving the label of artificial intelligence. With an understanding of causation, many errors and hallucinations that are characteristic of the current generation of large language models *will* disappear. 
 
