@@ -1,7 +1,7 @@
-Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
+Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI/ML are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
-- the largest removal of First Amendment protections ever advanced ([[A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
+- what would be the largest removal of First Amendment protections ever advanced ([[A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
 - a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
 
 These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
@@ -32,7 +32,7 @@ SSRN paste here ^b88360
 ```
 Who wrote it? - UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
 How objective is the issue? - Objective
-How central is the issue to the article? - Not at all. It's also a cool paper. I mention this mainly to characterize [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
+How central is the issue to the article? - Not at all. It's also a cool paper. I mention it mainly because it shows how mixing compsci's shorthand and law's language-literalism could have downstream effects (eg Nondeterministic Torts)
 What's the outcome if the article is adopted - The issue doesn't affect doctrinal recommendations
 ```
 
@@ -40,12 +40,11 @@ What's the outcome if the article is adopted - The issue doesn't affect doctrina
 
 > A systematic sweep across nine values, ranging from fully deterministic (0) to maximally stochastic (2)
 
-The paper characterizes temperature as a spectrum from "more" deterministic to more stochastic.  ^0f2b53
-
+The paper characterizes temperature as a spectrum from "more" deterministic to more stochastic.  
 
 
 1. The axis is wrong. Stochasticity (variedness/randomness) is not the (true) opposite of determinism: nondeterminism is. While stochasticity is used as an antonym in standard ML usage, this shorthand is also technically wrong. Determinism is a property relative to a *specified* input set: a thing is deterministic "given input X." Properties of computer-generated randomness make it not truly random, and if we include that randomness as a specified input, even input stochasticity can yield determinism. This is something more attributable to the field's shorthand than the paper itself.
-2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] This is also shorthand: what is likely meant by determinism is "lower-entropy / more-concentrated output distribution." 
+2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] This is also shorthand: what is likely meant by determinism is "lower-entropy / more-concentrated output distribution." ^0f2b53
 3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
 
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
