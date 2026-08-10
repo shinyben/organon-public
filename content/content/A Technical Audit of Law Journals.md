@@ -2,7 +2,7 @@ Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship,
 
 Most notably this cascade has yielded 
 - what would be the largest removal of First Amendment protections ever advanced ([[A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
-- a tort liability regime that would allow LLM developers like OpenAI and Anthropic thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
+- a tort liability regime that would allow LLM developers like OpenAI and Anthropic to thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
 
 These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
 
@@ -20,10 +20,11 @@ What's the outcome if the article is adopted - A tort regime for LLMs that tech 
 
 I'm very proud of this paper, which involves an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexus do a thorough check). 
 
-L-continuity is the essential formal property that makes a product verifiably safe (or, currently, unsafe) at AI scale, and I expect it will be hard for law to handle the pacing problem (tech evolving faster than doctrine can regulate) in torts without reliance on it.
+L-continuity is the essential formal property that makes a product verifiably safe (or, currently, unsafe) at AI scale, and I expect it will be hard for law to handle the pacing problem (tech evolving faster than doctrine can regulate) in torts without reliance on it. I mean this in the sense that certain aspects of the pacing are treated a contingently hard, or "hard for now" ("we just don't have enough data yet") and L-continuity constitutes proof that no amount of data will give a solution. Treating certain problems as temporary gaps when they are in fact provably unsolvable is just wasting time and effort, and delays the necessary doctrinal response (e.g. the suggested strict liability for materially untested systems).
 
-SSRN paste here ^b88360
+[Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7220898)^b88360
 
+![[THERE IS SUCH THING AS A TAME BEAR - SSRN v0.pdf]]
 # Harvard
 
 ## *Traditional and Computational Canons*
@@ -63,7 +64,7 @@ What's the outcome if the article is adopted - Unsure, TODO: double check the No
 
 This is another determinism-related confusion, much like [[A Technical Audit of Law Journals#*Traditional and Computational Canons*|Traditional and Computational Canons]] and to a somewhat lesser degree [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
 
-Machine learning models do not learn (does not update its parameters) or adjust as they are used. Once a model is trained, it generally does not update at all. ChatGPT and Claude models are fixed formulas and do not learn directly from users asking them questions. However the companies that develop them capture that user data and use it to train other models later.
+Machine learning models do not learn (do not update their parameters) or adjust as they are used. Once a model is trained, it generally does not update at all. ChatGPT and Claude models are fixed formulas and do not learn directly from users asking them questions. However the companies that develop them capture that user data and use it to train other models later.
 
 The Note's central claim is that machine learning is uniquely hard for courts to review under §706(2)(A) because machine learning "evolves over time." Machine learning does not evolve over time in a way relevant to the Note's assertions. The Article's recommendations are then unfounded.
 
@@ -83,7 +84,7 @@ What's the outcome if the article is adopted - First Amendment protections are r
 
 > three fundamental characteristics of machine learning: (1) machine learning algorithms write their own rules; (2) machine learning programmers cannot explain those rules; and (3) the algorithms’ predictions are guaranteed to be wrong at least some of the time. Together, as we explore in Part IV, these characteristics prove decisive in the First Amendment analysis
 
-However none of these things are correct in any way meaningful to the Article's objective.[^3] This was a hard one to address objectively because it is a technical claim using highly underspecified language. 
+However none of these things are correct in any way meaningful way regarding the Article's objective.[^3] This was a hard one to address objectively because it is a technical claim using highly underspecified language. 
 
 What is a rule? What does it mean for an algorithm to "write its own" rules when it itself is written by a programmer? What does "explain" mean? To whom? Using what resources? What level of explanation (e.g., "well it's because the numbers get multiplied together and they choose this word") is valid? None of these questions are fully addressed, and a number of citations (Pedro Domingos, Cade Metz) are, in the construction of these "fundamental characteristics," objectively used as substantiation for assertions they don't support.
 
@@ -136,28 +137,12 @@ is answered pretty directly by Scott Aaronson, Professor of Computer Science at 
 
 # UNC
 
-## *Disability Discrimination by Clinical Algorithm*
-N.C. L. Rev. 103 (2025) [Source](https://scholarship.law.unc.edu/nclr/vol103/iss1/5/) 
-
-```
-Who wrote it? - UW Law Professor, Indiana Law Professor
-How objective is the issue? - Objective
-How central is the issue to the article? - Hard to tell. It does undercut a very emphasized claim but there seems to be additional parallel evidence (interviews etc.) that make the same point
-What's the outcome if the article is adopted - Low risk due to low centrality
-```
-
-> (n.128) the algorithm generated false positives eighty-nine percent of the time
-
-This and and the claims around it swap the roles of precision, accuracy, and false positive rate. For example "accuracy of the algorithm eroded from 11%" seems to then use the same 89% "false positive" number as accuracy (since 100% - 89% = 11%). 
-
-Far from being an 89% false positive rate, the source cited in this footnote says the rate is <1%. 
-
 ## *Deepfake Liability*
 N.C. L. Rev. 104 (2026) [Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr) 
 
 ```
 Who wrote it? - Postdoc at the Hebrew University of Jerusalem, WashU Law Professor (Visiting), Penn Carey Law Professor
-How objective is the issue? - Objective, large subjective
+How objective is the issue? - Objective, with large subjective secondary
 How central is the issue to the article? - The subjective is central
 What's the outcome if the article is adopted - Only slight effectiveness 
 ```
@@ -165,7 +150,7 @@ What's the outcome if the article is adopted - Only slight effectiveness
 The Article suggests, as one of three prescriptions
 > requiring companies to only release their code under an open-source license prohibiting the removal of basic safeguards
 
-However this suggestion goes against the [definition of open-source](https://opensource.org/osd) which says "The license must allow modifications and derived works" and "The license must not restrict anyone from making use of the program in a specific field of endeavor." A similar attempt a similarly "ethical license" has already been made and [shut down](https://github.com/raisely/NoHarm/pull/27#:~:text=TLDR%3A%20The%20%22Do,impossible%20to%20enforce.). Stable Diffusion, the main model that causes these issues, is already released under a non-open license that prohibits deep fakes - but it is still the main source of issues. It would be a minor edit to simply say "well then not open source" but that would cause problems for adoption: many enterprises can only work with open source. The prescription itself seems to need more grounding in the complexity of software licensing.
+However this suggestion goes against the [definition of open-source](https://opensource.org/osd) which says "The license must allow modifications and derived works" and "The license must not restrict anyone from making use of the program in a specific field of endeavor." A similar attempt at a similarly "ethical license" has already been made and [shut down](https://github.com/raisely/NoHarm/pull/27#:~:text=TLDR%3A%20The%20%22Do,impossible%20to%20enforce.). Stable Diffusion, the main model that causes these issues, is already released under a non-open license that prohibits deep fakes - but it is still the main source of issues. It would be a minor edit to simply say "well then not open source" but that would cause problems for adoption: many enterprises can only work with open source. The prescription itself seems to need more grounding in the complexity of software licensing.
 
 Another prescription is watermarking and relying on source code being difficult to edit (involving expertise). However a large subjective issue is raised here. The Article deals in "source code release" and never touches the important part: weight release. The model weights are out in the world, not just the code that generated the models. 
 
@@ -174,7 +159,7 @@ Stable Diffusion, for example, was a release of weights and weights-to-output co
 # NeurIPS (Generally Understood to be the Best AI/ML Conference)
 
 ## *Prohibiting Generative AI in Any Form of Weapon Control* (2025)
-39TH Conf. on Neural Info. Processing Sys [Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
+39th Conf. on Neural Info. Processing Sys [Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
 
 ```
 Who wrote it? - GMU Professor, (previously UVA Systems Engineering PhD, Duke Professorship)
@@ -198,7 +183,7 @@ They are each incorrect:
 1. [[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*|Nondeterministic Torts]]'s Response addresses this in depth
 2. Outputs "will" be different means you will never get the same output. The paper should replace "will" with "can"
 
-The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper here [[A Technical Audit of Law Journals#^0f2b53]].
+The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper: [[A Technical Audit of Law Journals#^0f2b53]].
 
 # Disclaimer
 

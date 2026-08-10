@@ -22,7 +22,7 @@ The word "phony" (repeated often in *Catcher*) applied to identity-associated th
 
 Museum/library grounding the wandering
 
-- "The best thing, though, in that museum was that everything always stayed right where it was. Nobody'd move. ... The only thing that would be diﬀerent would be you. Not that you’d be so much older or anything. It wouldn’t be that, exactly. You’d just be diﬀerent, that’s all."
+- "The best thing, though, in that museum was that everything always stayed right where it was. Nobody'd move. ... The only thing that would be different would be you. Not that you’d be so much older or anything. It wouldn’t be that, exactly. You’d just be different, that’s all."
 - "The library was like a second home. Or maybe more like a real home."
 
 A plan to run away 
