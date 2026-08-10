@@ -9,3 +9,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# Whitelist RAW directory
+!content/RAW/
+!content/RAW/**
