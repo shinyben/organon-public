@@ -6,17 +6,14 @@ Most notably this cascade has yielded
 
 These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
 
-# Yale
-
 ## *Nondeterministic Torts: A Technical Approach to AI Liability* 
 135 Yale L.J. 2719 (2026) [Source](https://yalelawjournal.org/note/nondeterministic-torts-a-technical-approach-to-ai-liability)
 
-```
-Who wrote it? - Yale Student Note
-How objective is the issue? - Objective
-How central is the issue to the article? - Central. The title itself is a reference to the technical issue
-What's the outcome if the article is adopted - A tort regime for LLMs that tech firms can thwart with near-zero cost
-```
+> [!note] Article Metadata
+> - **Who wrote it?** — Yale Student Note
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — Central. The title itself is a reference to the technical issue
+> - **Outcome if the article is adopted** — A tort regime for LLMs that tech firms can thwart with near-zero cost
 
 I'm very proud of this paper, which involves an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexus do a thorough check). 
 
@@ -25,17 +22,15 @@ L-continuity is the essential formal property that makes a product verifiably sa
 [Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7220898)^b88360
 
 ![[THERE IS SUCH THING AS A TAME BEAR - SSRN v0.pdf]]
-# Harvard
 
 ## *Traditional and Computational Canons*
 39 HARV. J.L. & TECH. 287 (2025) [Source](https://jolt.law.harvard.edu/assets/articlePDFs/v39.1/Traditional-and-Computational-Canons.pdf)
 
-```
-Who wrote it? - UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
-How objective is the issue? - Objective
-How central is the issue to the article? - Not at all. It's also a cool paper. I mention it mainly because it shows how mixing compsci's shorthand and law's language-literalism could have downstream effects (eg Nondeterministic Torts)
-What's the outcome if the article is adopted - The issue doesn't affect doctrinal recommendations
-```
+> [!note] Article Metadata
+> - **Who wrote it?** — UChicago Law Instructor (previously MIT PhD in Cognitive Sci)
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — Not at all. It's also a cool paper. I mention it mainly because it shows how mixing compsci's shorthand and law's language-literalism could have downstream effects (eg Nondeterministic Torts)
+> - **Outcome if the article is adopted** — The issue doesn't affect doctrinal recommendations
 
 > Lower temperatures (e.g., 0) make outputs more deterministic, while higher temperatures (e.g., 1–2) make them more varied.
 
@@ -53,12 +48,11 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 ## *Machine Rulemaking: Arbitrary and Capricious Review in the Age of AI*
 138 Harv. L. Rev. 1821 (2025) [Source](https://harvardlawreview.org/print/vol-138/machine-rulemaking-arbitrary-and-capricious-review-in-the-age-of-ai/) 
 
-```
-Who wrote it? - Anonymous Harvard Student
-How objective is the issue? - Objective
-How central is the issue to the article? - It is the core of the article
-What's the outcome if the article is adopted - Unsure, TODO: double check the Note's claim is represented correctly
-```
+> [!note] Article Metadata
+> - **Who wrote it?** — Anonymous Harvard Student
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — It is the core of the article
+> - **Outcome if the article is adopted** — Unsure, TODO: double check the Note's claim is represented correctly
 
 > Traditional algorithms are deterministic... In contrast, an ML (machine learning) model can dynamically learn and adjust its approach as it is used
 
@@ -66,21 +60,18 @@ This is another determinism-related confusion, much like [[A Technical Audit of 
 
 Machine learning models do not learn (do not update their parameters) or adjust as they are used. Once a model is trained, it generally does not update at all. ChatGPT and Claude models are fixed formulas and do not learn directly from users asking them questions. However the companies that develop them capture that user data and use it to train other models later.
 
-The Note's central claim is that machine learning is uniquely hard for courts to review under §706(2)(A) because machine learning "evolves over time." Machine learning does not evolve over time in a way relevant to the Note's assertions. The Article's recommendations are then unfounded.
+The Note's central claim is that machine learning is uniquely hard for courts to review under §706(2)(A) because machine learning "evolves over time." Machine learning does not evolve over time in a way relevant to the Note's assertions. Its recommendations are then unfounded.
 
 As an aside: online algorithms are also not a uniquely machine learning technique. There are simple examples in other fields. When you see a stock market graph with a smooth line imposed on top, that smooth line is, much of the time, the average of the last X price datapoints, known as a "simple moving average." This is an online algorithm. 
-
-# Stanford
 
 ## *Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*
 Stan. L. Rev. 77 (2025) [Source](https://review.law.stanford.edu/wp-content/uploads/sites/3/2025/01/Austin-Levy-77-Stan.-L.-Rev.-1.pdf)
 
-```
-Who wrote it? - Two practitioners, both Stanford Law alums
-How objective is the issue? - Subjective, but sometimes objective
-How central is the issue to the article? - It is the core of the article
-What's the outcome if the article is adopted - First Amendment protections are removed from the outputs of systems involving gradient descent, which is a much more sweeping ban than a targeted removal of protections for social media content moderation algorithms
-```
+> [!note] Article Metadata
+> - **Who wrote it?** — Two practitioners, both Stanford Law alums
+> - **How objective is the issue?** — Subjective, but sometimes objective
+> - **How central is the issue to the article?** — It is the core of the article
+> - **Outcome if the article is adopted** — First Amendment protections are removed from the outputs of systems involving gradient descent, which is a much more sweeping ban than a targeted removal of protections for social media content moderation algorithms
 
 > three fundamental characteristics of machine learning: (1) machine learning algorithms write their own rules; (2) machine learning programmers cannot explain those rules; and (3) the algorithms’ predictions are guaranteed to be wrong at least some of the time. Together, as we explore in Part IV, these characteristics prove decisive in the First Amendment analysis
 
@@ -88,18 +79,27 @@ However none of these things are correct in any way meaningful way regarding the
 
 What is a rule? What does it mean for an algorithm to "write its own" rules when it itself is written by a programmer? What does "explain" mean? To whom? Using what resources? What level of explanation (e.g., "well it's because the numbers get multiplied together and they choose this word") is valid? None of these questions are fully addressed, and a number of citations (Pedro Domingos, Cade Metz) are, in the construction of these "fundamental characteristics," objectively used as substantiation for assertions they don't support.
 
-SSRN paste here
-# UChicago
+Pasting from the unfinished paper:
+
+> [!NOTE] 
+> The Article’s entire distinction between traditional code and machine learning rests on a single phrase: that machine learning algorithms “write their own rules.” The phrase appears in the abstract, anchors the Introduction, and serves as a pillar to argumentation throughout. Yet the Article never substantiates it, because the sources it cites do not support the Article’s claim.
+> 
+> The two authorities are quoted accurately, but make narrower statements than the Article needs. Pedro Domingos, writing for a general audience, says that “[l]earning algorithms . . . are algorithms that make other algorithms.” That is, one program, written by a human, can produce a second (likely simpler) program. Domingos’ claim that *some* machine learning algorithms *can* produce *other* algorithms does not establish what the Article requires to show machine learning's universal self-authorship: that *all* machine learning algorithms *do* author *themselves*. 
+> 
+> Similarly, the Article’s *Wired* feature quotes a former Google engineer saying that with machine learning “we don’t have to write *these* rules anymore.” This engineer is best understood to say that Google’s old hand-written search rules were being replaced with machine learning, not that the company's engineers have stopped authoring its search algorithms altogether, and can’t be used as the Article uses it to demonstrate any machine self-authorship of rules. 
+> 
+> Both sources are popularizations, never meant to bear technical—much less constitutional—weight. No search through the appropriate source, technical literature, will yield sources that hold that a trained model is authorless, because it is not.
+
+TODO: SSRN paste here
 
 ## *Causal AI—A VISOR for the Law of Torts*
 U. Chi. L. Rev. Online (2024) [Source](https://lawreview.uchicago.edu/online-archive/causal-ai-visor-law-torts)  
 
-```
-Who wrote it? - Humboldt University Law Professor
-How objective is the issue? - Subjective
-How central is the issue to the article? - Central. The title itself is a reference to the technical issue
-What's the outcome if the article is adopted - There is no doctrinal recommendation as this is an article that simply predicts future outcomes. Low risk
-```
+> [!note] Article Metadata
+> - **Who wrote it?** — Humboldt University Law Professor
+> - **How objective is the issue?** — Subjective
+> - **How central is the issue to the article?** — Central. The title itself is a reference to the technical issue
+> - **Outcome if the article is adopted** — There is no doctrinal recommendation as this is an article that simply predicts future outcomes. Low risk
 
 > Causal AI is within reach.
 
@@ -118,8 +118,6 @@ Structural causal **models** actually *include* exogenous variables, but the mod
 
 What the reasoning in the paragraph relies on is *omitted/unmodeled* variables, not the variables the model already knows about and has chosen to set aside from causality and treat as given. It is much harder to rule out that all the infinite variables in the world don't impact your model than make that same judgement about the ones you already have in hand. Swapping them is what leads to this paragraph's seismic claim.
 
-# Berkeley
-
 ## *AI’s Future May Be Quantum* (2026)
 Berkeley Technology Law Journal (Blogpost) [Source](https://btlj.org/2026/02/ais-future-may-be-quantum/)
 
@@ -134,18 +132,14 @@ is answered pretty directly by Scott Aaronson, Professor of Computer Science at 
 > The single most common misconception, which you find repeated in almost every popular article about the subject that is written says, well, a classical computer is made of bits, and so it can just try each possible solution one by one, but a quantum computer is made of qubits, which can be zero and one at the same time . . . . Well, that is gesturing towards something in the vicinity of the truth, but it’s also very seriously misleading. It leads people to think that quantum computers would have capabilities that actually we don’t think that they would have. This is not even controversial within this field, right. We all know this, but it’s very hard to get the message out. [src](https://www.ycombinator.com/blog/scott-aaronson-on-computational-complexity-theory-and-quantum-computers/?utm_source=chatgpt.com)
 
 (specifically measurement collapses the superposition, so you need engineered constructive interference)
-
-# UNC
-
 ## *Deepfake Liability*
 N.C. L. Rev. 104 (2026) [Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr) 
 
-```
-Who wrote it? - Postdoc at the Hebrew University of Jerusalem, WashU Law Professor (Visiting), Penn Carey Law Professor
-How objective is the issue? - Objective, with large subjective secondary
-How central is the issue to the article? - The subjective is central
-What's the outcome if the article is adopted - Only slight effectiveness 
-```
+> [!note] Article Metadata
+> - **Who wrote it?** — Postdoc at Hebrew University of Jerusalem; WashU Law Professor (Visiting); Penn Carey Law Professor
+> - **How objective is the issue?** — Objective, with large subjective secondary
+> - **How central is the issue to the article?** — The subjective is central
+> - **Outcome if the article is adopted** — Only slight effectiveness
 
 The Article suggests, as one of three prescriptions
 > requiring companies to only release their code under an open-source license prohibiting the removal of basic safeguards
@@ -156,17 +150,16 @@ Another prescription is watermarking and relying on source code being difficult 
 
 Stable Diffusion, for example, was a release of weights and weights-to-output code, not just source code. Weights being in the wild bypasses the need to edit source code (the expertise claim), since the weights are what a malicious actor would want to get from that source code anyway. Similarly, the watermarking (which gets optionally bolted onto the weights by the source code) is ineffective because the weights are out there in the wild, and weights on their own would need to have had the watermarks embedded via SynthID. And even this safeguard is ineffective because in-weight watermarks can be fine-tuned or purified out once weights are public.  The word "weight" does not come up at all in the article, despite weights being the central object of interest to third party developers. This seems to raise many questions.
 
-# NeurIPS (Generally Understood to be the Best AI/ML Conference)
-
 ## *Prohibiting Generative AI in Any Form of Weapon Control* (2025)
 39th Conf. on Neural Info. Processing Sys [Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
 
-```
-Who wrote it? - GMU Professor, (previously UVA Systems Engineering PhD, Duke Professorship)
-How objective is the issue? - Objective
-How central is the issue to the article? - I just read the technical part so I don't know
-What's the outcome if the article is adopted - No idea 
-```
+(NeurIPS is generally understood to be the best AI/ML conference)
+
+> [!note] Article Metadata
+> - **Who wrote it?** — GMU Professor (previously UVA Systems Engineering PhD; Duke Professorship)
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — I just read the technical part so I don't know
+> - **Outcome if the article is adopted** — No idea
 
 This paper is cited in [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. I say at fn.9 
 
@@ -188,6 +181,10 @@ The paper also includes a graph that involves a spectrum of determinism, which i
 # Disclaimer
 
 I'd like to generally disclaim that although I state things like "X is true," everything should be read with "it seems to me that X is true" or similar "I could definitely be wrong on this" asterisks being there in spirit
+
+I also got one wrong earlier: *Disability Discrimination by Clinical Algorithm* in N.C. L. Rev. 
+
+"Even when she chose a cutoff threshold at the 99th percentile of the score distribution (and, thus, only evaluated the accuracy of the risk scores of the highest one percent of all patient scores), she found that the algorithm generated false positives eighty-nine percent of the time" wasn't explaining false positive rate of 89% like I thought, but rather false discovery rate. 
 
 [^2]: The frontier problem in the field of causal inference concerns the exogenous variables and their bearing on the adequacy and completeness of causal models. If it were possible to rule out, with the help of computer-assisted mathematical analysis, that any variables that remained exogenous to the model influence the endogenous variables in a way that distorts the causal model, including its structural equations, then causal analysis could be formalized and computerized in full. Computers equipped with the necessary software could take over and extrapolate causal relationships from sets of observational data. Once digital machines understand the concept of causation, one can speak of Causal AI. This will mark a major step in the development of digital systems truly deserving the label of artificial intelligence. With an understanding of causation, many errors and hallucinations that are characteristic of the current generation of large language models *will* disappear. 
 
