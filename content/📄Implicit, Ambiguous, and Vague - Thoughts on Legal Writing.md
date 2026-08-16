@@ -1,0 +1,11 @@
+This is a (very) in-progress paper. I provided Claude something probably 1/4 of this length and the diagrams and explanations and whatnot and it spat out the notation and connecting paragraphs and such and gave it structure. I read through it and it seems pretty much what I was going for, but I can't take credit for a good 80% of the definitions. The math is very likely flawed in some way as well. It is not intended for any journal publication in the future, just public thinking
+
+The original idea was a syntax/semantics parse engine (like the things that make sure your code isn't missing a parenthesis somewhere and that it is well-formatted generally) for law. Such an engine would be able to detect the legal equivalent of "missing parentheses" - elements of doctrine or legislation left arbitrary, vague, or implicit. It looks like I was beaten to this by a [good](https://www.sciencedirect.com/science/article/pii/S2666307425000336) [few](https://yamachig.github.io/Lawtext/technical/parsing/) [people](https://padolsey.medium.com/using-llms-to-parse-and-understand-proposed-legislation-9eec469d9830), so I just explored whether law's issues of fuzziness were intractable or not which was a more interesting problem to me anyway. While I'm more focused on [[📄A Technical Audit of Law Journals]] at the moment (since it doesn't require much actual legal knowledge), I plan on eventually coming back here and updating the conclusion with stuff I learn during law school. 
+
+![[Pasted image 20260812094012.png|600]]
+
+This is what I was originally envisioning, pulled from one of those links. I was more interested in solving the hard issues of going Legislation -> Knowledge Base in the face of, e.g., the word "vehicle" being used in legislation keeping cars (vehicles) out of a park but this word also accidentally catching bikes. It would be interesting to see if we could auto-identify "penumbras" such as the word vehicle and generate a set of testing hypos against them to find their edges.
+
+---
+
+![[Ambiguity_and_Vagueness_in_Textual_Language.pdf]]

@@ -1,10 +1,10 @@
 Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI/ML are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
-- what would be the largest removal of First Amendment protections ever advanced ([[A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
-- a tort liability regime that would allow LLM developers like OpenAI and Anthropic to thwart strict liability in its entirety via a simple software update ([[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
+- what would be the largest removal of First Amendment protections ever advanced ([[📄A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
+- a tort liability regime that would allow LLM developers like OpenAI and Anthropic to thwart strict liability in its entirety via a simple software update ([[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
 
-These findings prompted me to create this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained something well enough on here and would be happy to hear suggestions for improvement). 
+These findings prompted me to make public this document of potential issues I've identified, meant to be readable for a general audience (though I have likely not explained everything well and would be happy to hear suggestions for improvement). 
 
 ## *Nondeterministic Torts: A Technical Approach to AI Liability* 
 135 Yale L.J. 2719 (2026) [Source](https://yalelawjournal.org/note/nondeterministic-torts-a-technical-approach-to-ai-liability)
@@ -21,7 +21,7 @@ L-continuity is the essential formal property that makes a product verifiably sa
 
 [Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7220898)^b88360
 
-![[THERE IS SUCH THING AS A TAME BEAR - SSRN v0.pdf]]
+![[THERE IS SUCH THING AS A TAME BEAR - SSRN v0.pdf]] ^7a5bda
 
 ## *Traditional and Computational Canons*
 39 HARV. J.L. & TECH. 287 (2025) [Source](https://jolt.law.harvard.edu/assets/articlePDFs/v39.1/Traditional-and-Computational-Canons.pdf)
@@ -41,7 +41,7 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 
 1. The axis is wrong. Stochasticity (variedness/randomness) is not the (true) opposite of determinism: nondeterminism is. While stochasticity is used as an antonym in standard ML usage, this shorthand is also technically wrong. Determinism is a property relative to a *specified* input set: a thing is deterministic "given input X." Properties of computer-generated randomness make it not truly random, and if we include that randomness as a specified input, even input stochasticity can yield determinism. This is something more attributable to the field's shorthand than the paper itself.
 2. Something cannot be "more deterministic." Determinism is not a spectrum: it is a property of processes for which supplying the same inputs always produces the same outputs.[^1] This is also shorthand: what is likely meant by determinism is "lower-entropy / more-concentrated output distribution." ^0f2b53
-3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
+3. High temperatures do not induce nondeterminism. This is a more complex explanation that I address in my reply to [[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]
 
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 
@@ -56,7 +56,7 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 
 > Traditional algorithms are deterministic... In contrast, an ML (machine learning) model can dynamically learn and adjust its approach as it is used
 
-This is another determinism-related confusion, much like [[A Technical Audit of Law Journals#*Traditional and Computational Canons*|Traditional and Computational Canons]] and to a somewhat lesser degree [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
+This is another determinism-related confusion, much like [[📄A Technical Audit of Law Journals#*Traditional and Computational Canons*|Traditional and Computational Canons]] and to a somewhat lesser degree [[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. Instead of mixing determinism with stochasticity as the Harvard JOLT Article does, this mixes determinism with "online algorithms," the property of an algorithm updating itself while it runs. An algorithm can be online and deterministic at the same time. While "dynamically learn" is of course definitionally restricted to learning systems, the learning aspect is not load-bearing in the context of the Note's claim - so the difference between "online learning" and "online" generally does not need to be addressed.
 
 Machine learning models do not learn (do not update their parameters) or adjust as they are used. Once a model is trained, it generally does not update at all. ChatGPT and Claude models are fixed formulas and do not learn directly from users asking them questions. However the companies that develop them capture that user data and use it to train other models later.
 
@@ -92,6 +92,20 @@ Pasting from the unfinished paper:
 
 TODO: SSRN paste here
 
+## *Beyond Infringement: Rethinking DMCA § 1202 for Generative AI*
+78 STAN. L. REV. 667 (2026)
+
+> LLMs create distinct, independent outputs for each user.
+
+The paper then cites nondeterminism ([[📄A Technical Audit of Law Journals#*An Empirical Study of the Non-determinism of ChatGPT in Code Generation*|below]]) as proof. However nondeterminism (one input can generate more than one output) is not the same as independent outputs (each new input receives a newly-generated output). Independent outputs and determinism could exist and the paper's point would still hold. This Note looked very well thought out.
+
+## *An Empirical Study of the Non-determinism of ChatGPT in Code Generation*
+arXiv:2308.02828 [cs.SE] (2023) [src](https://arxiv.org/pdf/2308.02828)
+
+> Large Language Models (LLMs) are nondeterministic by nature
+
+LLMs are deterministic by nature. See [[📄A Technical Audit of Law Journals#^7a5bda]]
+
 ## *Causal AI—A VISOR for the Law of Torts*
 U. Chi. L. Rev. Online (2024) [Source](https://lawreview.uchicago.edu/online-archive/causal-ai-visor-law-torts)  
 
@@ -118,8 +132,8 @@ Structural causal **models** actually *include* exogenous variables, but the mod
 
 What the reasoning in the paragraph relies on is *omitted/unmodeled* variables, not the variables the model already knows about and has chosen to set aside from causality and treat as given. It is much harder to rule out that all the infinite variables in the world don't impact your model than make that same judgement about the ones you already have in hand. Swapping them is what leads to this paragraph's seismic claim.
 
-## *AI’s Future May Be Quantum* (2026)
-Berkeley Technology Law Journal (Blogpost) [Source](https://btlj.org/2026/02/ais-future-may-be-quantum/)
+## *AI’s Future May Be Quantum* 
+Berkeley Technology Law Journal (Blogpost) (2026) [Source](https://btlj.org/2026/02/ais-future-may-be-quantum/)
 
 (The exposition questions aren't relevant here, it's a student blog explaining the landscape)
 
@@ -132,6 +146,28 @@ is answered pretty directly by Scott Aaronson, Professor of Computer Science at 
 > The single most common misconception, which you find repeated in almost every popular article about the subject that is written says, well, a classical computer is made of bits, and so it can just try each possible solution one by one, but a quantum computer is made of qubits, which can be zero and one at the same time . . . . Well, that is gesturing towards something in the vicinity of the truth, but it’s also very seriously misleading. It leads people to think that quantum computers would have capabilities that actually we don’t think that they would have. This is not even controversial within this field, right. We all know this, but it’s very hard to get the message out. [src](https://www.ycombinator.com/blog/scott-aaronson-on-computational-complexity-theory-and-quantum-computers/?utm_source=chatgpt.com)
 
 (specifically measurement collapses the superposition, so you need engineered constructive interference)
+
+## *Retrieval-Augmented Generation: Structurally Enabling Reliable AI Output*
+10 Geo. L. Tech. Rev. 414 (2025) [Source](https://georgetownlawtechreview.org/retrieval-augmented-generation-structurally-enabling-reliable-ai-output/GLTR-07-2026/)
+
+> [!note] Article Metadata
+> - **Who wrote it?** — Associate at Kirkland & Ellis
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — Total. The title's claim *is* the technical error
+> - **Outcome if the article is adopted** — Courts and bar authorities treat RAG-based research tools as structurally reliable for Rule 11, when it is not reliable 
+
+The paper:
+
+> Because the "knowledge" is sitting right in front of the model, the LLM no longer needs to "guess" the next word based on probability. Instead, it engages in "grounding," where the LLM will treat the specified text as the ground truth.
+
+Computer science research:
+
+> Recently, certain legal research providers have touted methods such as retrieval-augmented generation (RAG) as "eliminating" (Casetext, 2023) or "avoid[ing]" hallucinations (Thomson Reuters, 2023), or guaranteeing "hallucination-free" legal citations (LexisNexis, 2023) . . . . we find that the AI research tools made by LexisNexis (Lexis+ AI) and Thomson Reuters (Westlaw AI-Assisted Research and Ask Practical Law AI) each hallucinate between 17% and 33% of the time[^5]
+
+So the LLM still guesses, it just guesses with the "knowledge" directly accessible. In other words, RAG changes what is in the context window.[^4] It does not touch the process of probability-based next-word generation. This refutes the core of the Note.
+
+There are also a number of supporting confusions. "[A]pplying the law of large numbers, an LLM's output represents a probabilistic average of the knowledge": autoregressive decoding is neither averaging nor sampling from a fixed distribution. Another, "the LLM does not store the original document's details, but extracts the statistical pattern of the text and discards the rest to make the model small enough to run on a server" is wrong[^7][^8] and cites to the Harvard Digest piece, but the cited source does not comment on the topic at all.
+
 ## *Deepfake Liability*
 N.C. L. Rev. 104 (2026) [Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr) 
 
@@ -150,8 +186,8 @@ Another prescription is watermarking and relying on source code being difficult 
 
 Stable Diffusion, for example, was a release of weights and weights-to-output code, not just source code. Weights being in the wild bypasses the need to edit source code (the expertise claim), since the weights are what a malicious actor would want to get from that source code anyway. Similarly, the watermarking (which gets optionally bolted onto the weights by the source code) is ineffective because the weights are out there in the wild, and weights on their own would need to have had the watermarks embedded via SynthID. And even this safeguard is ineffective because in-weight watermarks can be fine-tuned or purified out once weights are public.  The word "weight" does not come up at all in the article, despite weights being the central object of interest to third party developers. This seems to raise many questions.
 
-## *Prohibiting Generative AI in Any Form of Weapon Control* (2025)
-39th Conf. on Neural Info. Processing Sys [Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
+## *Prohibiting Generative AI in Any Form of Weapon Control* 
+39th Conf. on Neural Info. Processing Sys (2025) [Source](https://neurips.cc/virtual/2025/loc/san-diego/poster/121921)
 
 (NeurIPS is generally understood to be the best AI/ML conference)
 
@@ -161,7 +197,7 @@ Stable Diffusion, for example, was a release of weights and weights-to-output co
 > - **How central is the issue to the article?** — I just read the technical part so I don't know
 > - **Outcome if the article is adopted** — No idea
 
-This paper is cited in [[A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. I say at fn.9 
+This paper is cited in [[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. I say at fn.9 
 
 > Cummings does not substantiate the Note’s key premise, though. Hers is a policy position paper, rather than an empirical paper seeking formal correctness. Read in context, it is not a substantiated claim that—literally interpreted—all connectionist AI models are neural networks, or that all neural networks are non-deterministic, or that no two outputs of the same input are ever the same. Such literal claims would contradict the Note’s other sources and are easily falsified.
 
@@ -173,19 +209,35 @@ There are two important propositions in this sentence:
 2. Every time non-deterministic networks are run, the outputs will be different
 
 They are each incorrect: 
-1. [[A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*|Nondeterministic Torts]]'s Response addresses this in depth
+1. [[📄A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*|Nondeterministic Torts]]'s Response addresses this in depth
 2. Outputs "will" be different means you will never get the same output. The paper should replace "will" with "can"
 
-The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper: [[A Technical Audit of Law Journals#^0f2b53]].
+The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper: [[📄A Technical Audit of Law Journals#^0f2b53]].
 
 # Disclaimer
 
 I'd like to generally disclaim that although I state things like "X is true," everything should be read with "it seems to me that X is true" or similar "I could definitely be wrong on this" asterisks being there in spirit
 
-I also got one wrong earlier: *Disability Discrimination by Clinical Algorithm* in N.C. L. Rev. 
+I also got one wrong earlier (though the error never hit the live website): *Disability Discrimination by Clinical Algorithm* in N.C. L. Rev. 
 
 "Even when she chose a cutoff threshold at the 99th percentile of the score distribution (and, thus, only evaluated the accuracy of the risk scores of the highest one percent of all patient scores), she found that the algorithm generated false positives eighty-nine percent of the time" wasn't explaining false positive rate of 89% like I thought, but rather false discovery rate. 
+
+# Results and Recommendations
+
+Because my goal is private practice, legal scholarship will remain a side project rather than a focus. I expect I will disengage with it sooner rather than later, as it is extremely effort-intensive. This audit and its papers were mainly made as a demonstration for a friend. 
+
+Each of these papers is the product of teams of people selected from the most competent at the relevant institution. Yet there seems to be consistent signoff on papers with glaring fundamental flaws. Many are noticeable from reading the abstract. A number involve sources that do not support the paper or establish the opposite of what the paper says they do. 
+
+I recommend that anyone writing a law paper on AI or another technical subject cite the actual research as opposed to marketing materials or pop articles. I also recommend a technical review step on top of standard review.
 
 [^2]: The frontier problem in the field of causal inference concerns the exogenous variables and their bearing on the adequacy and completeness of causal models. If it were possible to rule out, with the help of computer-assisted mathematical analysis, that any variables that remained exogenous to the model influence the endogenous variables in a way that distorts the causal model, including its structural equations, then causal analysis could be formalized and computerized in full. Computers equipped with the necessary software could take over and extrapolate causal relationships from sets of observational data. Once digital machines understand the concept of causation, one can speak of Causal AI. This will mark a major step in the development of digital systems truly deserving the label of artificial intelligence. With an understanding of causation, many errors and hallucinations that are characteristic of the current generation of large language models *will* disappear. 
 
 [^3]: (3) is correct but accuracy (being right) and certainty (being sure of your prediction) are mixed together in the Article's inferential step
+
+[^4]: Patrick Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*, 33 ADVANCES NEURAL INFO. PROCESSING SYS. 9459, 9460 (2020) (defining $p_{\text{RAG-Sequence}}(y \mid x) \approx \sum_{z \in \text{top-}k(p(\cdot \mid x))} p_{\eta}(z \mid x) \prod_{i}^{N} p_{\theta}(y_{i} \mid x, z, y_{1:i-1})$, in which the retrieved document $z$ enters as a latent variable marginalized over per-token next-token distributions).
+
+[^5]: Varun Magesh et al., _Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools_, 22 J. EMPIRICAL LEGAL STUD. 216 (2025) (finding Lexis+ AI and Westlaw AI-Assisted Research hallucinate on 17% and 33% of queries respectively, notwithstanding vendor claims that RAG "eliminat[es]" hallucination).
+
+[^7]: Nicholas Carlini et al., *Quantifying Memorization Across Neural Language Models*, 11th Int'l Conf. on Learning Representations (ICLR 2023) (finding that a 6-billion-parameter model memorizes at least 1% of its training corpus in a form extractable verbatim by prefix prompting).
+
+[^8]: Jordan Hoffmann et al., *Training Compute-Optimal Large Language Models*, 36th Conf. on Neural Info. Processing Sys. (NeurIPS 2022) (deriving optimal parameter count as a function of training compute budget, with model size and training-token count scaling in equal proportion).
