@@ -219,6 +219,31 @@ They are each incorrect:
 
 The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper: [[📄A Technical Audit of Law Journals#^0f2b53]].
 
+## Brain Decoders Create a New Federal Evidence Problem
+jurist.org [Source](https://www.jurist.org/commentary/2026/08/brain-decoders-create-a-new-federal-evidence-problem/)
+
+> [!note] Article Metadata
+> - **Who wrote it?** — Another UNC Law 1L 😎
+> - **How objective is the issue?** — Not an issue, just what I would find interesting as a follow up
+
+The article:
+> Machine-generated text reconstructed from brain activity is now accurate enough to approximate what a person heard, imagined or attempted to say. This is a capability that, offered as criminal evidence, would let prosecutors put words in a defendant’s mouth while bypassing nearly every safeguard the Federal Rules of Evidence builds around human testimony
+
+Two follow-ups to the article would be interesting. I don't know any Evidence rules so I'm gonna take all that at face value. Very cool paper.
+
+On the doctrinal side, since this is essentially a compelled self-incrimination issue, I would be interested to hear about what could make this workable under the Fifth Amendment (and potentially Fourth). From a quick search, *Schmerber* allows for Constitutionally sanctioned forced blood draw on the theory that blood is physical rather than testimonial. *United States v. Semrau* says that fMRI lie detection results are inadmissible due to accuracy concerns (under 702, not 5A), and *Doe v. United States* puts compelled disclosure of the contents of one's mind on the protected side of the *Schmerber* line.
+
+On the technical side, the Tang et al. paper cited says
+
+> we tested whether successful decoding requires subject cooperation and found that subject cooperation is required both to train and to apply the decoder.
+
+"let prosecutors put words in a defendant’s mouth" from the Jurist paper seems to assume an uncooperative subject, but Tang says the decoding doesn't work on uncooperative subjects. Is there some concern about defendants that don't know how to properly be uncooperative and defeat the brain scan?
+
+The scan reconstructs stuff that the defendant is thinking about during the scan, so if we were looking to get the location of a weapon out of him/her, he/she would have to be actively thinking about that location for retrieval. 
+
+I think this could also interact well with Andrea Roth, _Machine Testimony_, 126 Yale L.J. 1972 (2017). [Source](https://yalelawjournal.org/article/machine-testimony)
+
+> But the law on machine conveyance is confused: courts shoehorn them into existing rules by treating them as “hearsay,” as “real evidence,” or as “methods” underlying human expert opinions . . . .  explores credibility testing in the form of front-end design, input, and operation protocols; pretrial disclosure and access rules; authentication and reliability rules; impeachment and courtroom testing mechanisms; jury instructions; and corroboration rules
 # Disclaimer
 
 I'd like to generally disclaim that although I state things like "X is true," everything should be read with "it seems to me that X is true" or similar "I could definitely be wrong on this" asterisks being there in spirit
