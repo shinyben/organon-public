@@ -1,3 +1,8 @@
+> [!note] AI Disclosure
+> No AI used for any website text.
+> 
+> The Yale paper used AI that conformed with both the *GenAI for the Legal Profession* course from Berkeley Law and Yale Law Journal's requirements. Similar with the (in-progress) Stanford paper.
+
 Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI/ML are often misunderstood. Occasionally inferences are drawn from those misunderstandings that cascade into disastrous policy recommendations. 
 
 Most notably this cascade has yielded 
