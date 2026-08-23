@@ -32,7 +32,7 @@ L-continuity, where I end up, is the essential formal property that makes a prod
 
 ![[THERE IS SUCH THING AS A TAME BEAR - SSRN v0.pdf]] ^7a5bda
 
-## *Traditional and Computational Canons*
+### *Traditional and Computational Canons*
 39 HARV. J.L. & TECH. 287 (2025) [Source](https://jolt.law.harvard.edu/assets/articlePDFs/v39.1/Traditional-and-Computational-Canons.pdf)
 
 > [!note] Article Metadata
@@ -54,7 +54,7 @@ The paper characterizes temperature as a spectrum from "more" deterministic to m
 
 [^1]: *Non-Determinism and the Lawlessness of Machine Learning Code*, 2022 SYMP. ON COMPUT. SCI. & L. 1, 2-3. Cooper, Frankle, and De Sa (by logically inverting their definition of nondeterminism). [src](https://afedercooper.info/paper/cooper2022lawless.pdf)
 
-## *Machine Rulemaking: Arbitrary and Capricious Review in the Age of AI*
+### *Machine Rulemaking: Arbitrary and Capricious Review in the Age of AI*
 138 Harv. L. Rev. 1821 (2025) [Source](https://harvardlawreview.org/print/vol-138/machine-rulemaking-arbitrary-and-capricious-review-in-the-age-of-ai/) 
 
 > [!note] Article Metadata
@@ -73,6 +73,53 @@ The Note's central claim is that machine learning is uniquely hard for courts to
 
 As an aside: online algorithms are also not a uniquely machine learning technique. There are simple examples in other fields. When you see a stock market graph with a smooth line imposed on top, that smooth line is, much of the time, the average of the last X price datapoints, known as a "simple moving average." This is an online algorithm. 
 
+### *Beyond Infringement: Rethinking DMCA § 1202 for Generative AI*
+78 STAN. L. REV. 667 (2026)
+
+> LLMs create distinct, independent outputs for each user.
+
+The paper then cites nondeterminism ([[📄A Technical Audit of Law Journals#*An Empirical Study of the Non-determinism of ChatGPT in Code Generation*|below]]) as proof. However nondeterminism (one input can generate more than one output) is not the same as independent outputs (each new input receives a newly-generated output). Independent outputs and determinism could exist and the paper's point would still hold. This Note looked very well thought out.
+
+### *An Empirical Study of the Non-determinism of ChatGPT in Code Generation*
+arXiv:2308.02828 [cs.SE] (2023) [src](https://arxiv.org/pdf/2308.02828)
+
+> [!note] Article Metadata
+> Computer science paper cited in [[📄A Technical Audit of Law Journals#*Beyond Infringement Rethinking DMCA § 1202 for Generative AI*|Beyond Infringement]]
+
+> Large Language Models (LLMs) are nondeterministic by nature
+
+LLMs are deterministic by nature. See [[📄A Technical Audit of Law Journals#^7a5bda]]
+
+
+### *Generative Interpretation*
+99 N.Y.U. L. REV. 451 (2024) [src](https://nyulawreview.org/wp-content/uploads/2024/05/99-NYU-L-Rev-451-1.pdf)
+
+> models can be set to be hotter (more random) or colder (more deterministic)
+
+Same thing as [[📄A Technical Audit of Law Journals#*Machine Rulemaking Arbitrary and Capricious Review in the Age of AI*|Machine Rulemaking]]
+
+This is a super quick sketch 
+
+It feels like the paper is saying "oh we can figure out what contract terms mean by asking an AI and if it gives us some high-percent answer that can be used towards ordinary meaning in the same way a survey can." But if you want to replace population surveys with LLM output it feels like it should be established that LLM outputs are actually good proxies for survey results and I'm not seeing any comment on that in the paper. Surveys are flawed for the reasons they mention but have at least some claim to validity in their sampling of the population, whereas LLMs are completely ungrounded (their output is more about what they were trained on than true population-sampling) even if we do show surveys and LLMs agree a lot. 
+
+So it sounds like we're getting (some) judges using AI to decide stuff already and the paper wants to put some guardrails on that but the whole enterprise of establishing that AI outputs are empirically grounded seems pretty questionable but judges are doing it anyway and need some justification(?) or correction by reducing judicial reliance on priors, but that leaves the actual issue of judicial reliance on quasi-empiric outputs a bit untouched. 
+
+It doesn't seem established that LLMs have *any* relationship to ordinary meaning but when the judiciary uses LLM output to eg enter summary judgment it making an ordinary meaning call based on an algorithm that hasn't been shown to have anything to do with ordinary meaning. 
+
+The validity of the paper's use of cosine similarity as the same as survey results has issues as well - cosine similarity measures how often the two terms *appear in similar contexts* in the *entire* training data. What we want to know is whether the two terms are *interpreted* similarly *given some context C.* This is extremely gameable - just saturate your contract with terms with different general-meaning and expert-meaning words like "consideration" that would lead to the evaluation tilting in your favor.
+
+> Now, the model doesn’t provide (nor could it) a scientific answer
+	to the question of whether certain words are sufficiently close to make
+	the plain meaning of flood unambiguous. That choice is ultimately a
+	normative one which judges must make. But there is a bit of difference
+	between an informed conclusion based on a statistical analysis of billions
+	of texts and a judgment by a few dictionary editors. And there is an ocean
+	of difference between the baroque and expensive textualism the court
+	used and code that is cheap, replicable, quick, and most importantly,
+	extremely straightforward to use. Simply put, generative interpretation
+	is good enough for many cases that currently employ more expensive,
+	and arguably less certain, methodologies. It’s a workable, workmanlike
+	method for a resource-constrained contract litigation world.
 ## *Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*
 Stan. L. Rev. 77 (2025) [Source](https://review.law.stanford.edu/wp-content/uploads/sites/3/2025/01/Austin-Levy-77-Stan.-L.-Rev.-1.pdf)
 
@@ -100,21 +147,6 @@ Pasting from the unfinished paper:
 > Both sources are popularizations, never meant to bear technical—much less constitutional—weight. No search through the appropriate source, technical literature, will yield sources that hold that a trained model is authorless, because it is not.
 
 TODO: SSRN paste here
-
-## *Beyond Infringement: Rethinking DMCA § 1202 for Generative AI*
-78 STAN. L. REV. 667 (2026)
-
-> LLMs create distinct, independent outputs for each user.
-
-The paper then cites nondeterminism ([[📄A Technical Audit of Law Journals#*An Empirical Study of the Non-determinism of ChatGPT in Code Generation*|below]]) as proof. However nondeterminism (one input can generate more than one output) is not the same as independent outputs (each new input receives a newly-generated output). Independent outputs and determinism could exist and the paper's point would still hold. This Note looked very well thought out.
-
-## *An Empirical Study of the Non-determinism of ChatGPT in Code Generation*
-arXiv:2308.02828 [cs.SE] (2023) [src](https://arxiv.org/pdf/2308.02828)
-
-> Large Language Models (LLMs) are nondeterministic by nature
-
-LLMs are deterministic by nature. See [[📄A Technical Audit of Law Journals#^7a5bda]]
-
 ## *Causal AI—A VISOR for the Law of Torts*
 U. Chi. L. Rev. Online (2024) [Source](https://lawreview.uchicago.edu/online-archive/causal-ai-visor-law-torts)  
 
@@ -228,7 +260,7 @@ The paper also includes a graph that involves a spectrum of determinism, which i
 jurist.org [Source](https://www.jurist.org/commentary/2026/08/brain-decoders-create-a-new-federal-evidence-problem/)
 
 > [!note] Article Metadata
-> - **Who wrote it?** — Another UNC Law 1L 😎
+> - **Who wrote it?** — Another UNC Law 1L 
 > - **How objective is the issue?** — Not an issue, just what I would find interesting as a follow up
 
 The article:
