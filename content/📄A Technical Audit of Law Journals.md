@@ -3,11 +3,12 @@
 > 
 > The Yale paper used AI that conformed with both the *GenAI for the Legal Profession* course from Berkeley Law and Yale Law Journal's requirements. Similar with the (in-progress) Stanford paper.
 
-Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI/ML are often misunderstood. Occasionally inferences drawn from those misunderstandings cascade into flawed policy recommendations. 
+Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship, I've found that the technical details of AI/ML are often misunderstood. Occasionally inferences drawn from those misunderstandings cascade into flawed policy recommendations. I've kept my comments on the legal side of these combined legal/technical papers to a minimum.
 
 Most notably this cascade has yielded 
 - what would be the largest removal of First Amendment protections ever advanced ([[📄A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
 - a tort liability regime that would allow LLM developers like OpenAI and Anthropic to thwart strict liability in its entirety via a simple software update ([[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
+- a recommendation that judges resolve the ordinary meaning of words with mathematical techniques that have no substantive meaning ([[📄A Technical Audit of Law Journals#*Generative Interpretation*|Generative Interpretation]] - though I later found someone else had already written a similar critique)
 
 These findings prompted me to make public this document of potential issues I've identified, meant to be readable by a general audience (though I have likely not explained everything well and would be happy to hear suggestions for improvement). 
 
@@ -94,11 +95,19 @@ LLMs are deterministic by nature. See [[📄A Technical Audit of Law Journals#^7
 ### *Generative Interpretation*
 99 N.Y.U. L. REV. 451 (2024) [src](https://nyulawreview.org/wp-content/uploads/2024/05/99-NYU-L-Rev-451-1.pdf)
 
+> [!note] Article Metadata
+> NOTE: After looking into this more and trying to figure out if I could get a paper out of it, I found out that Grimmelmann, Sobel & Stein, _Generative Misinterpretation_, 63 Harv. J. on Legis. (2026) already nearly makes the critique that I suggested. This makes any paper I could write more nitpicky than helpful. I'm leaving it up due to my independent derivation.
+> 
+> - **Who wrote it?** — UPenn Carey Law Professor, U Alabama Law Professor
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — It is the core of the article
+> - **Outcome if the article is adopted** — Judges feel justified in establishing "ordinary meaning" of words in contracts off inferences that have no substantive grounding 
+
 > models can be set to be hotter (more random) or colder (more deterministic)
 
 Same thing as [[📄A Technical Audit of Law Journals#*Machine Rulemaking Arbitrary and Capricious Review in the Age of AI*|Machine Rulemaking]]
 
-This is a super quick sketch 
+This is a super quick sketch of a broader problem with the paper:
 
 It feels like the paper is saying "oh we can figure out what contract terms mean by asking an AI and if it gives us some high-percent answer that can be used towards ordinary meaning in the same way a survey can." But if you want to replace population surveys with LLM output it feels like it should be established that LLM outputs are actually good proxies for survey results and I'm not seeing any comment on that in the paper. Surveys are flawed for the reasons they mention but have at least some claim to validity in their sampling of the population, whereas LLMs are completely ungrounded (their output is more about what they were trained on than true population-sampling) even if we do show surveys and LLMs agree a lot. 
 
