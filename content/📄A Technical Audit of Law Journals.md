@@ -272,11 +272,11 @@ Stable Diffusion, for example, was a release of weights and weights-to-output co
 > - **How central is the issue to the article?** — I just read the technical part so I don't know
 > - **Outcome if the article is adopted** — No idea
 
-This paper is cited in [[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]. I say at fn.9 
+This paper is cited in the Yale paper ([[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]]). I say at fn.9 in my Response
 
 > Cummings does not substantiate the Note’s key premise, though. Hers is a policy position paper, rather than an empirical paper seeking formal correctness. Read in context, it is not a substantiated claim that—literally interpreted—all connectionist AI models are neural networks, or that all neural networks are non-deterministic, or that no two outputs of the same input are ever the same. Such literal claims would contradict the Note’s other sources and are easily falsified.
 
-Getting into her paper seemed too in the weeds for a student response, but I find my equivocation "not seeking formal correctness" to be incomplete. Her paper uses this sentence as setup
+Getting into her paper seemed too in the weeds for a student response, but I find my equivocation on it not "seeking formal correctness" to be incomplete. It's more that the paper has some parts that are cited correctly by the Yale student but are wrong. Her paper uses this sentence as setup
 > Also known as neural networks, connectionist AI models are non-deterministic, meaning every time they are run, even with the same input, the outputs will be different
 
 There are two important propositions in this sentence:
@@ -285,7 +285,7 @@ There are two important propositions in this sentence:
 
 They are each incorrect: 
 1. [[📄A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*|Nondeterministic Torts]]' Response addresses this in depth
-2. Outputs "will" be different means you will never get the same output. The paper should replace "will" with "can"
+2. Outputs "will" be different means you will never get the same output. A correct definition would use "can"
 
 The paper also includes a graph that involves a spectrum of determinism, which is the same issue from the Harvard JOLT paper: [[📄A Technical Audit of Law Journals#^0f2b53]].
 
