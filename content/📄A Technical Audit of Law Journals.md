@@ -219,6 +219,30 @@ So the LLM still guesses. It just guesses with the "knowledge" directly accessib
 
 There are also a number of supporting confusions. "[A]pplying the law of large numbers, an LLM's output represents a probabilistic average of the knowledge": autoregressive decoding is neither averaging nor sampling from a fixed distribution. Another, "the LLM does not store the original document's details, but extracts the statistical pattern of the text and discards the rest to make the model small enough to run on a server" is wrong[^7][^8] and cites to the Harvard Digest piece, but the cited source does not comment on the topic at all.
 
+## *Understanding Large Language Models*
+9 Geo. L. Tech. Rev. 256 (2025) [src](https://georgetownlawtechreview.org/understanding-large-language-models/GLTR-01-2025/)
+
+> [!note] Article Metadata
+> - **Who wrote it?** — Staff Editor, Georgetown Law Technology Review
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — The article is about understanding LLMs
+> - **Outcome if the article is adopted** — N/A, no doctrinal recommendation
+
+There's a whole section of this paper talking about the "recurrent layer" of LLMs. There is no recurrent layer in LLMs. The paper cites two sources, one from 2015 (before LLMs happened) and another that doesn't mention recurrence at all. 
+
+![[Pasted image 20260901212400.png]]
+
+From the abstract of the technical paper that kicked the LLM age off: 
+
+> We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. [src](https://arxiv.org/pdf/1706.03762)
+
+The paper also contradicts itself (if you draw a simple inference)
+
+> What makes attention particularly revolutionary is its ability to integrate information across the entire input sequence simultaneously, unlike earlier NLP models such as Recurrent Neural Networks (RNNs) or Long Short-Term Memory (LSTM) networks, which are constrained by their  limited capacity to reference distant elements.
+
+It says attention and recurrence are two parts of LLMs, then says attention is revolutionary because it doesn't have the downside of recurrent neural networks (recurrence).
+
+There are a number of other less serious issues with the paper.
 ## *Deepfake Liability*
 N.C. L. Rev. 104 (2026) [Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr) 
 
