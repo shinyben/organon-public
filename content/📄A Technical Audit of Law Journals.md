@@ -8,9 +8,46 @@ Hi, I'm Ben, a 1L at UNC Law. In reading through contemporary legal scholarship,
 Most notably this cascade has yielded 
 - what would be the largest removal of First Amendment protections ever advanced ([[📄A Technical Audit of Law Journals#*Speech Certainty: Algorithmic Speech and the Limits of the First Amendment*|Speech Certainty: Algorithmic Speech and the Limits of the First Amendment]])
 - a tort liability regime that would allow LLM developers like OpenAI and Anthropic to thwart strict liability in its entirety via a simple software update ([[📄A Technical Audit of Law Journals#*Nondeterministic Torts: A Technical Approach to AI Liability*|Nondeterministic Torts: A Technical Approach to AI Liability]])
-- a recommendation that judges resolve the ordinary meaning of words with mathematical techniques that have no substantive meaning ([[📄A Technical Audit of Law Journals#*Generative Interpretation*|Generative Interpretation]] - though I later found someone else had already written a similar critique)
+- a recommendation that judges resolve the ordinary meaning of words with mathematical techniques that have no substantive meaning ([[📄A Technical Audit of Law Journals#*Generative Interpretation*|Generative Interpretation]] - though I later found someone else had already written a response to this)
 
 These findings prompted me to make public this document of potential issues I've identified, meant to be readable by a general audience (though I have likely not explained everything well and would be happy to hear suggestions for improvement). 
+
+# Structure
+
+I'll first show an easily understandable issue that will set the tone for the rest. Then I will show [[📄A Technical Audit of Law Journals#*Nondeterministic Torts A Technical Approach to AI Liability*|Nondeterministic Torts]], the first paper to which I've written a substantive reply. Other papers in Nondeterministic Torts's orbit will follow, and then a collection of other papers will be shown.
+
+## *Understanding Large Language Models*
+9 Geo. L. Tech. Rev. 256 (2025) [src](https://georgetownlawtechreview.org/understanding-large-language-models/GLTR-01-2025/)
+
+> [!note] Article Metadata
+> - **Who wrote it?** — Staff Editor, Georgetown Law Technology Review
+> - **How objective is the issue?** — Objective
+> - **How central is the issue to the article?** — The article is about understanding LLMs and it misrepresents LLMs
+> - **Outcome if the article is adopted** — N/A, no doctrinal recommendation
+
+There's a section of this paper talking about the "recurrent layer" of LLMs. There is no recurrent layer in LLMs. (This can be checked by Googling "do LLMs have recurrent layers"). The paper cites two sources, one from 2015 (pre-LLMs) and another that doesn't mention recurrence at all. 
+
+![[Pasted image 20260901212400.png]]
+
+From the abstract of the technical paper that kicked the LLM age off: 
+
+> We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. [src](https://arxiv.org/pdf/1706.03762)
+
+The paper also contradicts itself (if you draw a simple inference)
+
+> What makes attention particularly revolutionary is its ability to integrate information across the entire input sequence simultaneously, unlike earlier NLP models such as Recurrent Neural Networks (RNNs) or Long Short-Term Memory (LSTM) networks, which are constrained by their  limited capacity to reference distant elements.
+
+It says attention and recurrence are two parts of LLMs, then says attention is revolutionary because it doesn't have the downside of recurrent neural networks (recurrence's limited distance capacity).
+
+This audit in general ignores misdatings, misspellings, misformattings, offhand incorrectness, etc. It mentions notable miscitation and misattribution. Here are some examples from this paper that will be ignored in the others:
+- "LLMs have gained notoriety since the launch of ChatGPT in 2021"
+	- ChatGPT was launched in 2022
+- "LLMs are defined by their extraordinary scale, with millions to billions of parameters"
+	- billions to trillions
+- "prominent LLMs like ChatGPT and Google Translate have become indispensable tools"
+	- Google Translate is not a LLM (doesn't generate text, just translates)
+
+Most of the comments in this audit are at the second level (after one inference), though a number are surface-level (like the Googleable issue).
 
 ## *Nondeterministic Torts: A Technical Approach to AI Liability* 
 135 Yale L.J. 2719 (2026) [Source](https://yalelawjournal.org/note/nondeterministic-torts-a-technical-approach-to-ai-liability)
@@ -21,13 +58,13 @@ These findings prompted me to make public this document of potential issues I've
 > - **How central is the issue to the article?** — Central. The title itself is a reference to the technical issue
 > - **Outcome if the article is adopted** — A tort regime for large language models (LLMs) that tech firms can thwart with near-zero cost
 
-I'm very proud of this paper, which involves an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexusNexis do a thorough check). 
+I'm very proud of this paper, which involves an original mathematical proof that refutes the exact core premise of the Yale Note, as well as the introduction of Lipschitz continuity as a concept into legal scholarship (I had a friend at LexisNexis do a thorough check). 
 
 The easiest communication of the issue at the core of the paper is the fact that its citations contradict it. From my Response:
 
 > The Note cites a short list of technical sources to support its claims that, in LLMs, “precise determinism is not possible” . . . . the Note relies on [Cooper, Frankle, and De Sa](https://arxiv.org/pdf/2206.11834), but they explain that “A particular model . . . is deterministic—always producing the same output given the same input.” (quote on page 3)
 
-L-continuity, where I end up, is the essential formal property that makes a product verifiably safe (or, currently, unsafe) at AI scale, and I expect it will be hard for law to handle the pacing problem (tech evolving faster than doctrine can regulate) in torts without reliance on it. I mean this in the sense that certain aspects of the pacing are treated as contingently hard, or "hard for now" ("we just don't have enough data yet") and L-continuity constitutes proof that no amount of data will give a solution. Treating certain problems as temporary gaps when they are in fact provably unsolvable is just wasting time and effort, and delays the necessary doctrinal response (e.g. the suggested strict liability for materially untested systems).
+L-continuity, where I end up, is the essential formal property that makes a product verifiably safe (or, currently, unsafe) at AI scale, and I expect it will be hard for law to handle the pacing problem (tech evolving faster than doctrine can regulate) in torts without reliance on it for reasons explained in the paper. I mean this in the sense that certain aspects of the pacing are treated as contingently hard, or "hard for now" ("we just don't have enough data yet") and L-continuity constitutes proof that no amount of data will give a solution. Treating certain problems as temporary gaps when they are in fact provably unsolvable is just wasting time and effort, and delays the necessary doctrinal response (e.g. the suggested strict liability for materially untested systems).
 
 [Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7220898)^b88360
 
@@ -185,18 +222,17 @@ What the reasoning in the paragraph relies on is *omitted/unmodeled* variables, 
 ## *AI’s Future May Be Quantum* 
 Berkeley Technology Law Journal (Blogpost) (2026) [Source](https://btlj.org/2026/02/ais-future-may-be-quantum/)
 
-(The exposition questions aren't relevant here, it's a student blog explaining the landscape)
+> [!note] Article Metadata
+> - **Who wrote it?** — Berkeley student
 
-The article's
-
-qubits
+The article says qubits
 > can be 0 and 1 at the same time. That means a quantum computer can handle multiple calculations in parallel
 
-is answered pretty directly by Scott Aaronson, Professor of Computer Science at UT Austin:
+which is answered pretty directly by Scott Aaronson, Professor of Computer Science at UT Austin:
 
 > The single most common misconception, which you find repeated in almost every popular article about the subject that is written says, well, a classical computer is made of bits, and so it can just try each possible solution one by one, but a quantum computer is made of qubits, which can be zero and one at the same time . . . . Well, that is gesturing towards something in the vicinity of the truth, but it’s also very seriously misleading. It leads people to think that quantum computers would have capabilities that actually we don’t think that they would have. This is not even controversial within this field, right. We all know this, but it’s very hard to get the message out. [src](https://www.ycombinator.com/blog/scott-aaronson-on-computational-complexity-theory-and-quantum-computers/?utm_source=chatgpt.com)
 
-(specifically, measurement collapses the superposition, so you need engineered constructive interference)
+(what actually happens after measurement collapses the superposition is engineered constructive interference)
 
 ## *Retrieval-Augmented Generation: Structurally Enabling Reliable AI Output*
 10 Geo. L. Tech. Rev. 414 (2025) [Source](https://georgetownlawtechreview.org/retrieval-augmented-generation-structurally-enabling-reliable-ai-output/GLTR-07-2026/)
@@ -219,30 +255,6 @@ So the LLM still guesses. It just guesses with the "knowledge" directly accessib
 
 There are also a number of supporting confusions. "[A]pplying the law of large numbers, an LLM's output represents a probabilistic average of the knowledge": autoregressive decoding is neither averaging nor sampling from a fixed distribution. Another, "the LLM does not store the original document's details, but extracts the statistical pattern of the text and discards the rest to make the model small enough to run on a server" is wrong[^7][^8] and cites to the Harvard Digest piece, but the cited source does not comment on the topic at all.
 
-## *Understanding Large Language Models*
-9 Geo. L. Tech. Rev. 256 (2025) [src](https://georgetownlawtechreview.org/understanding-large-language-models/GLTR-01-2025/)
-
-> [!note] Article Metadata
-> - **Who wrote it?** — Staff Editor, Georgetown Law Technology Review
-> - **How objective is the issue?** — Objective
-> - **How central is the issue to the article?** — The article is about understanding LLMs
-> - **Outcome if the article is adopted** — N/A, no doctrinal recommendation
-
-There's a whole section of this paper talking about the "recurrent layer" of LLMs. There is no recurrent layer in LLMs. The paper cites two sources, one from 2015 (before LLMs happened) and another that doesn't mention recurrence at all. 
-
-![[Pasted image 20260901212400.png]]
-
-From the abstract of the technical paper that kicked the LLM age off: 
-
-> We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. [src](https://arxiv.org/pdf/1706.03762)
-
-The paper also contradicts itself (if you draw a simple inference)
-
-> What makes attention particularly revolutionary is its ability to integrate information across the entire input sequence simultaneously, unlike earlier NLP models such as Recurrent Neural Networks (RNNs) or Long Short-Term Memory (LSTM) networks, which are constrained by their  limited capacity to reference distant elements.
-
-It says attention and recurrence are two parts of LLMs, then says attention is revolutionary because it doesn't have the downside of recurrent neural networks (recurrence).
-
-There are a number of other less serious issues with the paper.
 ## *Deepfake Liability*
 N.C. L. Rev. 104 (2026) [Source](https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=7066&context=nclr) 
 
@@ -324,13 +336,13 @@ I also got one wrong earlier (though the error never hit the live website): *Dis
 
 I'm also not keeping the sources and formatting and such on this post standard.
 
-# Results and Recommendations
+# *Zapatero, a tus zapatos*
 
-Because my goal is private practice, legal scholarship will remain a side project rather than a focus. I expect I will disengage with it sooner rather than later, as it is extremely effort-intensive. This audit and its papers were mainly made as a demonstration for a friend. 
+I find in this audit that it is somewhat common that law review articles do "epistemic trespass": boundary-crossing without boundary-awareness. This tendency towards overreach seems to have created a target-dense environment for technical critique.
 
-Each of these papers is the product of teams of people selected from the most competent at the relevant institution. Yet there seems to be consistent signoff on papers with glaring fundamental flaws. Many are noticeable from reading the abstract. A number involve sources that do not support the paper or establish the opposite of what the paper says they do. 
+I recommend that anyone writing a law paper on AI or another technical subject cite research papers or textbooks as opposed to marketing materials or magazine articles. I also recommend a technical review step on top of standard review.
 
-I recommend that anyone writing a law paper on AI or another technical subject cite the actual research as opposed to marketing materials or pop articles. I also recommend a technical review step on top of standard review.
+This audit was mainly made as a demonstration for a friend. 
 
 [^2]: The frontier problem in the field of causal inference concerns the exogenous variables and their bearing on the adequacy and completeness of causal models. If it were possible to rule out, with the help of computer-assisted mathematical analysis, that any variables that remained exogenous to the model influence the endogenous variables in a way that distorts the causal model, including its structural equations, then causal analysis could be formalized and computerized in full. Computers equipped with the necessary software could take over and extrapolate causal relationships from sets of observational data. Once digital machines understand the concept of causation, one can speak of Causal AI. This will mark a major step in the development of digital systems truly deserving the label of artificial intelligence. With an understanding of causation, many errors and hallucinations that are characteristic of the current generation of large language models *will* disappear. 
 

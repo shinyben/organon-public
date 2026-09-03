@@ -9,6 +9,7 @@ title: 🪵Organon Root
 Richard Hamming
 
 ![[Pasted image 20250405212248.png|400]]
+Fritz Kahn, *Man as an Industrial Palace*, 1926 
 
 *Organon* in Ancient Greek means instrument, tool, organ, or "systematic framework for acquiring knowledge." It is the title of Aristotle's six works on logic (Categories, On Interpretation, etc.) 
 
